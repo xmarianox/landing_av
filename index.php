@@ -61,7 +61,9 @@
 			
 			<div class="resultado">
 				<div class="content_mapa">
-					<div class="map-canvas"></div>
+					<div class="map-canvas">
+						<img src="images/mapa.jpg" alt="">
+					</div>
 				</div><!-- .content_mapa -->
 
 				<div class="lista_hoteles">

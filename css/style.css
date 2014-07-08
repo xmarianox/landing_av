@@ -142,15 +142,29 @@ nav ul li a.active {
     border-radius: 4px;
     text-decoration: none;
 }
+/* .btn-default */
 .btn-default {
     border: 1px solid #A6AAAD;
     background: #F1F1F1;
     color: #000;
 }
+.btn-default:hover, 
+.btn-default:focus
+.btn-default.active {
+    border: 1px solid #A7A7A7;
+    background: #BFBDBE;
+}
+/* .btn-primary */
 .btn-primary {
     border: 1px solid #01729A;
     background: #00AAE5;
     color: #FFF;
+}
+.btn-primary:hover, 
+.btn-primary:focus
+.btn-primary.active {
+    border: 1px solid #004D6B;
+    background: #1E70B7;
 }
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa
@@ -201,6 +215,7 @@ nav ul li a.active {
     width: 100%;
     float: left;
     border-right: 1px solid #BFBDBE;
+    overflow: hidden;
 }
 .map-canvas {
     width: 100%;
