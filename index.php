@@ -7,6 +7,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
+	<!-- To remove all auto-formatting for telephone numbers -->
+	<meta name="format-detection" content="telephone=no">
 
 	<title>Avant Trip</title>
 
@@ -16,7 +19,7 @@
 
 	<!-- JS -->
 	<script src="scripts/modernizr.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script>
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script> -->
 </head>
 <body>
 	<!--[if lt IE 7]>
@@ -58,6 +61,36 @@
 					</div>
 				</div>
 			</div><!-- content_filtro -->
+
+			<div class="comp_search">
+				<div class="control">
+					<form action="" type="post">
+
+						<input type="text" name="lugar" id="lugar" placeHolder="Madrid, España">
+
+						<div class="date">
+							<input type="text" name="desde" id="desde" placeHolder="22/08/14">
+							<i class="fa fa-calendar"></i>
+						</div>
+
+						<div class="date">
+							<input type="text" name="hasta" id="hasta" placeHolder="22/08/15">
+							<i class="fa fa-calendar"></i>
+						</div>
+
+						<div class="combo">	
+							<select name="huespedes" id="huespedes">
+								<option value="">Personas: 2 / Habitaciones: 1</option>
+								<option value="">Personas: 2 / Habitaciones: 1</option>
+								<option value="">Personas: 2 / Habitaciones: 1</option>
+								<option value="">Personas: 2 / Habitaciones: 1</option>
+							</select>
+						</div><!-- combo -->
+
+						<button class="btn btn-primary">Aplicar</button>
+					</form>
+				</div><!-- control -->
+			</div><!-- comp_search -->
 			
 			<div class="resultado">
 				<div class="content_mapa">
@@ -181,7 +214,7 @@
 	<script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="scripts/jquery-ui.js"></script>
 	<script type="text/javascript" src="scripts/funciones.js?v=<?=rand() ?>"></script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
       function initialize() {
         var mapOptions = {
           center: new google.maps.LatLng(-34.397, 150.644),
@@ -191,7 +224,7 @@
             mapOptions);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+    </script> -->
 	<!-- GA -->
 
 </body>

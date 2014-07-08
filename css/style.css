@@ -69,9 +69,9 @@ table { border-collapse: collapse; border-spacing: 0; }
     font-family: 'Stag-Book';
     src: url('../fonts/Stag-Book.eot?') format('eot'), 
          url('../fonts/Stag-Book.otf')  format('opentype'),
-         url('Stag-Book.woff') format('woff'), 
-         url('Stag-Book.ttf')  format('truetype'),
-         url('Stag-Book.svg#Stag-Book') format('svg');
+         url('../fonts/Stag-Book.woff') format('woff'), 
+         url('../fonts/Stag-Book.ttf')  format('truetype'),
+         url('../fonts/Stag-Book.svg#Stag-Book') format('svg');
 }
 /* = = = = = = = = = = = = = = = = =
 *  Layout 
@@ -249,6 +249,55 @@ nav ul li a.active {
 .filtro #btn_orden {
     margin-right: 12px;
 }
+/* = = = = = = = = = =
+*  Componente Search
+*  = = = = = = = = = */
+.comp_search {
+    width: 100%;
+    background: #FFF;
+    height: 50px;
+    border-bottom: 1px solid #BFBDBE;
+}
+.comp_search .control {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px 20px 11px 17px;
+    height: 100%;
+}
+.comp_search #lugar {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #A6AAAD;
+    border-radius: 4px;
+    display: inline-block;
+    height: 31px;
+    width: 356px;
+    padding: 7px 12px;
+    color: #76787A;
+}
+.date {
+    border: 1px solid #A6AAAD;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    height: 31px;
+    width: 111px;
+    color: #76787A;
+    padding: 7px 10px;
+}
+.date input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    border: none;
+    width: 69px;
+    padding: 0;
+    margin: 0;
+    color: #76787A;
+}
+
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa
 *  = = = = = = = = = = = = = = = = */
@@ -343,6 +392,7 @@ nav ul li a.active {
     margin-right: 7px;
 }
 .item_hotel .content_price span {
+    font-family: 'Stag-Book';
     font-size: 13px;
     color: #ED1F24;
 }
