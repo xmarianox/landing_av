@@ -1,0 +1,6 @@
+/*
+*   Funciones
+*/
+$(document).ready(function () {
+
+});
