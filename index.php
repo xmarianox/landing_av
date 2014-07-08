@@ -30,7 +30,7 @@
 
 				<div class="call">
 					<p><span>0810-222-2826</span> Comprá también por teléfono</p>
-					<p>Lun a Vie de 8 a 20hs. Sáb t Dom de 9 a 15hs</p>	
+					<p class="light">Lun a Vie de 8 a 20hs. Sáb t Dom de 9 a 15hs</p>	
 				</div>
 			</div>
 		</header>
@@ -49,7 +49,7 @@
 			
 			<div class="content_filtro">
 				<div class="control">
-					<p class="description_results">260 hoteles en Madrid, España</p>
+					<p class="description_results">260 hoteles en <span>Madrid, España</span></p>
 					<a href="javascript:;" class="btn btn-primary" id="btn_modif">Modificar búsqueda &nbsp;<i class="fa fa-calendar"></i></a>
 
 					<div class="filtro">
