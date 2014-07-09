@@ -541,7 +541,7 @@ input[type=checkbox].css-checkbox + label.css-label.clr {
 	background-position: 0 0;
 	vertical-align:middle;
 	cursor:pointer;
-	margin-bottom: 8px;
+	margin-bottom: 9px;
 }
 input[type=checkbox].css-checkbox:checked + label.css-label, 
 input[type=checkbox].css-checkbox + label.css-label.chk {
@@ -565,7 +565,10 @@ label.css-label {
 .comp_filtros .control .cols {
 	float: left;
 	padding-right: 15px;
-	min-width: 160px;
+	min-width: 240px;
+}
+.comp_filtros .control .cols:first-child {
+	margin-left: 43px;
 }
 .comp_filtros .control .cols h2 {
 	font-family: 'Open Sans', sans-serif;
