@@ -407,13 +407,20 @@ nav ul li a.active {
 /* = = = = = = = = = = = = = = = = =
 *  Content Filtro
 *  = = = = = = = = = = = = = = = = */
-.content_filtro {
+.comp_filtros {
     width: 100%;
     background: #FFF;
     height: 422px;
     border-bottom: 1px solid #BFBDBE;
-    /*display: none;*/
+    display: none;
     overflow: hidden;
+}
+.comp_filtros .control {
+	width: 100%;
+	overflow: hidden;
+	padding: 15px 0;
+	height: 98px;
+	border-bottom: 1px solid #BFBDBE;
 }
 /* = = = = = = = = = = = = = = = = =
 *  JQUERY UI SLIDER CUSTOM
@@ -497,18 +504,87 @@ nav ul li a.active {
     font-weight: 700;
     font-size: 14px;
     text-align: center;
-    margin-top: 15px;
     margin-bottom: 20px;
 }
 .content_slider .values {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 	margin: 18px auto 10px;
-	width: 414px;
+	width: 434px;
+	overflow: hidden;
 }
 .content_slider .values p {
 	float: left;
 }
 .content_slider .values p.max_val {
 	float: right;
+}
+/* = = = = = = = = = = = = = = = = =
+*  Custom Checkbox
+*  = = = = = = = = = = = = = = = = */
+input[type=checkbox].css-checkbox {
+	position:absolute; 
+	z-index:-1000; 
+	top:-1000px;
+}
+input[type=checkbox].css-checkbox + label.css-label, 
+input[type=checkbox].css-checkbox + label.css-label.clr {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+	padding-left:24px;
+	height:18px; 
+	display:block;
+	line-height:18px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+	margin-bottom: 8px;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label, 
+input[type=checkbox].css-checkbox + label.css-label.chk {
+	background-position: 0 -18px;
+}
+label.css-label {
+	background-image:url(../images/csscheckbox.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* = = = = = = = = = = = = = = = = =
+*  FILTROS DE BUSQUEDA
+*  = = = = = = = = = = = = = = = = */
+.comp_filtros .opciones {
+	height: 269px;
+}
+.comp_filtros .control .cols {
+	float: left;
+	padding-right: 15px;
+	min-width: 160px;
+}
+.comp_filtros .control .cols h2 {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.comp_filtros .control .cols .ver_mas {
+	font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #0a90d0;
+    text-decoration: none;
+}
+/* Estrellas */
+input[type=checkbox].css-checkbox + label.css-label.stars {
+	color: #F7D100;
+}
+input[type=checkbox].css-checkbox + label.css-label.fiveStar {
+	color: #E7E7E7;
 }
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa

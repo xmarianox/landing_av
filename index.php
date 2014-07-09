@@ -56,8 +56,8 @@
 					<a href="javascript:;" class="btn btn-primary" id="btn_modif">Modificar búsqueda &nbsp;<i class="fa fa-calendar"></i></a>
 
 					<div class="filtro">
-						<a href="" class="btn btn-default" id="btn_orden"><i class="fa fa-bars"></i>&nbsp; Orden</a>
-						<a href="" class="btn btn-default" id="btn_filtro"><i class="fa fa-sliders"></i>&nbsp; Filtros</a>
+						<a href="javascript:;" class="btn btn-default" id="btn_orden"><i class="fa fa-bars"></i>&nbsp; Orden</a>
+						<a href="javascript:;" class="btn btn-default" id="btn_filtro"><i class="fa fa-sliders"></i>&nbsp; Filtros</a>
 					</div>
 				</div>
 			</div><!-- content_filtro -->
@@ -92,23 +92,149 @@
 				</div><!-- control -->
 			</div><!-- comp_search -->
 
-			<div class="content_filtro">
+			<div class="comp_filtros">
 				<div class="control">
-					
 					<div class="content_slider">
 						<h2>Precio por persona, por noche</h2>
 
-						<div id="slider-range"></div>
-						
+						<div id="slider-range"></div>						
 						<div class="values">
 							<p class="min_val"></p>
-
 							<p class="max_val"></p>
-						</div>
+						</div><!-- .values -->
+					</div><!-- .content_slider -->
+				</div>
 
-					</div>
-				</div>	
-			</div><!-- .content_filtro -->
+				<div class="control opciones">
+					
+					<div class="cols">
+						<h2>Barrios <span>(254)</span></h2>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+						<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+						<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+						<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
+						<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG5" class="css-checkbox" />
+						<label for="checkboxG5" class="css-label radGroup1">Plaza Mayor</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG6" class="css-checkbox" />
+						<label for="checkboxG6" class="css-label radGroup1">La Latina</label>
+					</div><!-- cols - barrios -->
+
+					<div class="cols">
+						<h2>Estrellas <span>(152)</span></h2>
+
+						<input type="checkbox" name="checkboxS1" id="checkboxS1" class="css-checkbox" checked="true"/>
+						<label for="checkboxS1" class="css-label radGroup1">Todas las estrellas</label>
+
+						<input type="checkbox" name="checkboxS2" id="checkboxS2" class="css-checkbox" />
+						<label for="checkboxS2" class="css-label radGroup1 fiveStar"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+
+						<input type="checkbox" name="checkboxS3" id="checkboxS3" class="css-checkbox" />
+						<label for="checkboxS3" class="css-label radGroup1 stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+
+						<input type="checkbox" name="checkboxS4" id="checkboxS4" class="css-checkbox" />
+						<label for="checkboxS4" class="css-label radGroup1 stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+
+						<input type="checkbox" name="checkboxS5" id="checkboxS5" class="css-checkbox" />
+						<label for="checkboxS5" class="css-label radGroup1 stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+
+						<input type="checkbox" name="checkboxS6" id="checkboxS6" class="css-checkbox" />
+						<label for="checkboxS6" class="css-label radGroup1 stars"><i class="fa fa-star"></i></label>
+
+						<input type="checkbox" name="checkboxS7" id="checkboxS7" class="css-checkbox" />
+						<label for="checkboxS7" class="css-label radGroup1">Sin categoría</label>
+					</div><!-- cols - estrellas -->
+
+					<div class="cols">
+						<h2>Rating TripAdvisor <span>(254)</span></h2>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+						<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+						<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+						<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
+						<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
+
+						<h2>Hoteles en promo <span>(254)</span></h2>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+						<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+						<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+						<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+
+					</div><!-- cols - trip -->
+
+					<div class="cols">
+						<h2>Servicios <span>(254)</span></h2>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+						<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+						<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+						<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
+						<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+						<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+
+						<a href="javascript:;" class="ver_mas" title="Ver mas"><i class="fa fa-arrow-circle-down"></i> Ver mas</a>
+
+					</div><!-- cols - trip -->
+
+					<div class="cols">
+						<h2>Clasificación <span>(152)</span></h2>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+						<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+						<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+						<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
+						<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+						<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+						<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+						<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+
+						<a href="javascript:;" class="ver_mas" title="Ver mas"><i class="fa fa-arrow-circle-down"></i> Ver mas</a>
+
+					</div><!-- cols - trip -->
+
+				</div>
+
+			</div><!-- .comp_filtros -->
 			
 			<div class="resultado">
 				<div class="content_mapa">
@@ -231,6 +357,7 @@
 	</div><!-- #wrapper -->
 	<script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="scripts/jquery-ui.js"></script>
+	<script type="text/javascript" src="scripts/jspatch.js"></script>
 	<script type="text/javascript" src="scripts/funciones.js?v=<?=rand() ?>"></script>
 	<!-- <script type="text/javascript">
       function initialize() {

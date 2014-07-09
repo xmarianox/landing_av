@@ -8,6 +8,11 @@ $(document).ready(function () {
 		$('.comp_search').toggle('swin');
 	});
 
+	$('#btn_filtro').click(function() {
+		$(this).toggleClass('active');
+		$('.comp_filtros').toggle('swin');
+	});
+
     $( "#desde, #hasta" ).datepicker();
 
 	$( "#slider-range" ).slider({
