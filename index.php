@@ -33,7 +33,7 @@
 
 				<div class="call">
 					<p><span>0810-222-2826</span> Comprá también por teléfono</p>
-					<p class="light">Lun a Vie de 8 a 20hs. Sáb t Dom de 9 a 15hs</p>	
+					<p class="light">Lun a Vie de 8 a 20hs. Sáb y Dom de 9 a 15hs</p>	
 				</div>
 			</div>
 		</header>
@@ -50,7 +50,7 @@
 
 		<div class="main">
 			
-			<div class="content_filtro">
+			<div class="content_filtros">
 				<div class="control">
 					<p class="description_results">260 hoteles en <span>Madrid, España</span></p>
 					<a href="javascript:;" class="btn btn-primary" id="btn_modif">Modificar búsqueda &nbsp;<i class="fa fa-calendar"></i></a>
@@ -88,9 +88,27 @@
 						</div><!-- combo -->
 
 						<button class="btn btn-primary" id="btn_aplicar_filtros">Aplicar</button>
-					</form>
+					</form><!-- formulario de busqueda -->
 				</div><!-- control -->
 			</div><!-- comp_search -->
+
+			<div class="content_filtro">
+				<div class="control">
+					
+					<div class="content_slider">
+						<h2>Precio por persona, por noche</h2>
+
+						<div id="slider-range"></div>
+						
+						<div class="values">
+							<p class="min_val"></p>
+
+							<p class="max_val"></p>
+						</div>
+
+					</div>
+				</div>	
+			</div><!-- .content_filtro -->
 			
 			<div class="resultado">
 				<div class="content_mapa">

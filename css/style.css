@@ -220,13 +220,13 @@ nav ul li a.active {
 /* = = = = = = = = = = = = = = = = =
 *  FILTROS
 *  = = = = = = = = = = = = = = = = */
-.content_filtro {
+.content_filtros {
     width: 100%;
     background: #FFF;
     height: 50px;
     border-bottom: 1px solid #BFBDBE;
 }
-.content_filtro .control {
+.content_filtros .control {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -261,7 +261,7 @@ nav ul li a.active {
 }
 .comp_search .control {
     width: 100%;
-    max-width: 1280px;
+    max-width: 985px;
     margin: 0 auto;
     padding: 10px 20px 11px 17px;
     height: 100%;
@@ -332,6 +332,183 @@ nav ul li a.active {
 	margin: 0;
 	vertical-align: top;
 	height: 31px;
+}
+/* datepicker - custom styles */
+#ui-datepicker-div {
+	font: normal 14px/18px Arial, Helvetica, sans-serif;
+	color: #333;
+	border: 1px solid #B2B2B4;
+	border-radius: 4px;
+	background: #FFF;
+	padding: 10px;
+	width: 180px;
+}
+.ui-datepicker-header {
+	height: 24px;
+}
+.ui-datepicker-title {
+    text-align: center;
+    padding-top: 3px;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+	background-color: #B2B2B4;
+	cursor: pointer;
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	top: 10px;
+	text-align: center;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: middle;
+	padding-top: 4px;
+	color: #FFF;
+}
+.ui-datepicker-prev {
+	left: 5px;
+}
+.ui-datepicker-next {
+	right: 5px;
+}
+.ui-datepicker-prev:before {
+	vertical-align: middle;
+	content: "\f137";
+}
+.ui-datepicker-next:before {
+	vertical-align: middle;
+	content: "\f138";
+}
+.ui-icon-circle-triangle-w,
+.ui-icon-circle-triangle-e {
+	display: none;
+}
+.ui-datepicker-calendar {
+	width: 100%;
+	margin-top: 5px;
+}
+.ui-datepicker-calendar th,
+.ui-datepicker-calendar td {
+	text-align: center;
+}
+.ui-datepicker-calendar a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+}
+.ui-datepicker-calendar a:hover {
+	color: #00aae5;
+}
+/* = = = = = = = = = = = = = = = = =
+*  Content Filtro
+*  = = = = = = = = = = = = = = = = */
+.content_filtro {
+    width: 100%;
+    background: #FFF;
+    height: 422px;
+    border-bottom: 1px solid #BFBDBE;
+    /*display: none;*/
+    overflow: hidden;
+}
+/* = = = = = = = = = = = = = = = = =
+*  JQUERY UI SLIDER CUSTOM
+*  = = = = = = = = = = = = = = = = */
+.ui-slider {
+	position: relative;
+	text-align: left;
+	width: 414px;
+	background: #BFBFBF;
+	margin: 0 auto;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 27px;
+	height: 27px;
+	background: #EAEBED;
+	display: block;
+	border: 1px solid #B0B1B3;
+	border-radius: 30px;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background: #ED1E24;
+}
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+.ui-slider-horizontal {
+	height: 3px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.7em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+.ui-sortable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+/* end jquery ui slider */
+.content_slider h2 {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.content_slider .values {
+	margin: 18px auto 10px;
+	width: 414px;
+}
+.content_slider .values p {
+	float: left;
+}
+.content_slider .values p.max_val {
+	float: right;
 }
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa
