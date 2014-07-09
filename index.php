@@ -87,7 +87,7 @@
 							</select>
 						</div><!-- combo -->
 
-						<button class="btn btn-primary">Aplicar</button>
+						<button class="btn btn-primary" id="btn_aplicar_filtros">Aplicar</button>
 					</form>
 				</div><!-- control -->
 			</div><!-- comp_search -->
