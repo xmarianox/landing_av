@@ -192,7 +192,7 @@ nav ul li a.active {
     color: #000;
 }
 .btn-default:hover, 
-.btn-default:focus
+.btn-default:focus,
 .btn-default.active {
     border: 1px solid #A7A7A7;
     background: #BFBDBE;
@@ -204,7 +204,7 @@ nav ul li a.active {
     color: #FFF;
 }
 .btn-primary:hover, 
-.btn-primary:focus
+.btn-primary:focus,
 .btn-primary.active {
     border: 1px solid #004D6B;
     background: #1E70B7;
@@ -220,13 +220,13 @@ nav ul li a.active {
 /* = = = = = = = = = = = = = = = = =
 *  FILTROS
 *  = = = = = = = = = = = = = = = = */
-.content_filtro {
+.content_filtros {
     width: 100%;
     background: #FFF;
     height: 50px;
     border-bottom: 1px solid #BFBDBE;
 }
-.content_filtro .control {
+.content_filtros .control {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -257,10 +257,11 @@ nav ul li a.active {
     background: #FFF;
     height: 50px;
     border-bottom: 1px solid #BFBDBE;
+    display: none;
 }
 .comp_search .control {
     width: 100%;
-    max-width: 1280px;
+    max-width: 985px;
     margin: 0 auto;
     padding: 10px 20px 11px 17px;
     height: 100%;
@@ -288,6 +289,7 @@ nav ul li a.active {
     color: #76787A;
     padding: 7px 10px;
     margin-right: 10px
+
 }
 .date input {
     font-family: 'Open Sans', sans-serif;
@@ -306,7 +308,6 @@ nav ul li a.active {
     background: transparent;
     width: 228px;
     padding: 5px;
-    font-size: 16px;
     line-height: 1;
     border: 0;
     border-radius: 0;
@@ -331,6 +332,308 @@ nav ul li a.active {
 .comp_search button {
     height: 31px
 }
+#btn_aplicar_filtros {
+	margin: 0;
+	vertical-align: top;
+	height: 31px;
+}
+/* datepicker - custom styles */
+#ui-datepicker-div {
+	font: normal 14px/18px Arial, Helvetica, sans-serif;
+	color: #333;
+	border: 1px solid #B2B2B4;
+	border-radius: 4px;
+	background: #FFF;
+	padding: 10px;
+	width: 180px;
+}
+.ui-datepicker-header {
+	height: 24px;
+}
+.ui-datepicker-title {
+    text-align: center;
+    padding-top: 3px;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+	background-color: #B2B2B4;
+	cursor: pointer;
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	top: 10px;
+	text-align: center;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: middle;
+	padding-top: 4px;
+	color: #FFF;
+}
+.ui-datepicker-prev {
+	left: 5px;
+}
+.ui-datepicker-next {
+	right: 5px;
+}
+.ui-datepicker-prev:before {
+	vertical-align: middle;
+	content: "\f137";
+}
+.ui-datepicker-next:before {
+	vertical-align: middle;
+	content: "\f138";
+}
+.ui-icon-circle-triangle-w,
+.ui-icon-circle-triangle-e {
+	display: none;
+}
+.ui-datepicker-calendar {
+	width: 100%;
+	margin-top: 5px;
+}
+.ui-datepicker-calendar th,
+.ui-datepicker-calendar td {
+	text-align: center;
+}
+.ui-datepicker-calendar a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+}
+.ui-datepicker-calendar a:hover {
+	color: #00aae5;
+}
+/* = = = = = = = = = = = = = = = = =
+*  Content Filtro
+*  = = = = = = = = = = = = = = = = */
+.comp_filtros {
+    width: 100%;
+    background: #FFF;
+    min-height: 422px;
+    border-bottom: 1px solid #BFBDBE;
+    display: none;
+    overflow: hidden;
+}
+.comp_filtros .control {
+	width: 100%;
+	overflow: hidden;
+	padding: 15px 0;
+	min-height: 98px;
+	border-bottom: 1px solid #BFBDBE;
+}
+/* = = = = = = = = = = = = = = = = =
+*  JQUERY UI SLIDER CUSTOM
+*  = = = = = = = = = = = = = = = = */
+.ui-slider {
+	position: relative;
+	text-align: left;
+	width: 414px;
+	background: #BFBFBF;
+	margin: 0 auto;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 27px;
+	height: 27px;
+	background: #EAEBED;
+	display: block;
+	border: 1px solid #B0B1B3;
+	border-radius: 30px;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background: #ED1E24;
+}
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+.ui-slider-horizontal {
+	height: 3px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.7em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+.ui-sortable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+/* end jquery ui slider */
+.content_slider h2 {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content_slider .values {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+	margin: 18px auto 10px;
+	width: 434px;
+	overflow: hidden;
+}
+.content_slider .values p {
+	float: left;
+}
+.content_slider .values p.max_val {
+	float: right;
+}
+/* = = = = = = = = = = = = = = = = =
+*  Custom Checkbox
+*  = = = = = = = = = = = = = = = = */
+input[type=checkbox].css-checkbox {
+	position:absolute; 
+	z-index:-1000; 
+	top:-1000px;
+}
+input[type=checkbox].css-checkbox + label.css-label, 
+input[type=checkbox].css-checkbox + label.css-label.clr {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+	padding-left:24px;
+	height:18px; 
+	display:block;
+	line-height:18px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+	margin-bottom: 9px;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label, 
+input[type=checkbox].css-checkbox + label.css-label.chk {
+	background-position: 0 -18px;
+}
+label.css-label {
+	background-image:url(../images/csscheckbox.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* orden */
+.comp_orden input[type=checkbox].css-checkbox + .comp_orden label.css-label, 
+.comp_orden input[type=checkbox].css-checkbox + .comp_orden label.css-label.clr {
+	display: inline-block;
+} 
+.comp_orden label.css-label {
+	background-image:url(../images/csscheckbox_2.png);
+}
+/* = = = = = = = = = = = = = = = = =
+*  FILTROS DE BUSQUEDA
+*  = = = = = = = = = = = = = = = = */
+.comp_filtros .opciones {
+	padding: 15px 0 0;
+}
+.comp_filtros .control .cols {
+	float: left;
+	padding-right: 15px;
+	min-width: 240px;
+	padding-bottom: 15px;
+}
+.comp_filtros .control .cols:first-child {
+	margin-left: 43px;
+}
+.comp_filtros .control .cols h2 {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.comp_filtros .control .cols .ver_mas {
+	font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #0a90d0;
+    text-decoration: none;
+}
+/* Estrellas */
+input[type=checkbox].css-checkbox + label.css-label.stars {
+	color: #F7D100;
+}
+input[type=checkbox].css-checkbox + label.css-label.fiveStar {
+	color: #E7E7E7;
+}
+/* mensaje de alerta */
+.message {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	background: #f0ed83;
+	height: 37px;
+	padding: 10px;
+	display: none;
+}
+.message p {
+	font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #323232;
+}
+.comp_filtros .content_btn {
+	min-height: 63px
+}
+#btn_aplicar_filtro {
+	width: 301px;
+	height: 31px;
+	margin: 0 auto;
+	display: block;
+}
+#btn_aplicar_filtro p {
+	display: inline-block;
+}
+/* = = = = = = = = = = = = = = = = =
+*  FILTRO DE ORDEN
+*  = = = = = = = = = = = = = = = = */
+
+
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa
 *  = = = = = = = = = = = = = = = = */
@@ -341,8 +644,8 @@ nav ul li a.active {
     overflow: hidden;
 }
 .content_mapa {
-    max-width: 626px;
-    width: 100%;
+    /*max-width: 626px;*/
+    width: 49%;
     float: left;
     border-right: 1px solid #BFBDBE;
     overflow: hidden;
@@ -354,9 +657,9 @@ nav ul li a.active {
 }
 .lista_hoteles {
     float: left;
-    max-width: 653px;
-    width: 100%;
-    padding: 23px 30px;
+    /*max-width: 653px;*/
+    width: 51%;
+    padding: 23px 28px;
 }
 .lista_hoteles ul {
     width: 100%;
@@ -439,5 +742,18 @@ nav ul li a.active {
     font-size: 12px;
     color: #666666;
 }
-
+/* = = = = = = = = = = = = = = = = =
+*  Ajustes Responsive
+*  = = = = = = = = = = = = = = = = */
+/* macbook-pro-13" */
+@media (max-width: 1280px){
+	.lista_hoteles {
+		padding: 23px 0 23px 23px;
+	}
+}
+@media (max-width: 1007px){
+	.lista_hoteles {
+		padding: 23px 0 23px 19px;
+	}
+}
 
