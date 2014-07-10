@@ -103,7 +103,7 @@
 							<p class="max_val"></p>
 						</div><!-- .values -->
 					</div><!-- .content_slider -->
-				</div>
+				</div><!-- .control -->
 
 				<div class="control opciones">
 					
@@ -232,9 +232,23 @@
 
 					</div><!-- cols - trip -->
 
+					<div class="message">
+						<p>No encontramos hoteles que apliquen a los filtros elegidos. Por favor seleccioná una nueva combinación de filtros</p>
+					</div><!-- mensaje de error -->
+
+				</div><!-- .control.opciones -->
+
+				<div class="control content_btn">
+					<a class="btn btn-primary" id="btn_aplicar_filtro"><p>Aplicar</p> <!-- hay que mostrar este icono mientras se esta buscando <i class="fa fa-spinner fa-spin"></i> --></a>
 				</div>
 
 			</div><!-- .comp_filtros -->
+
+			<div class="comp_orden">
+				<div class="control">
+					
+				</div>
+			</div>
 			
 			<div class="resultado">
 				<div class="content_mapa">

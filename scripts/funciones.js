@@ -13,6 +13,11 @@ $(document).ready(function () {
 		$('.comp_filtros').toggle('swin');
 	});
 
+	$('#btn_orden').click(function() {
+		$(this).toggleClass('active');
+		$('.comp_orden').toggle('swin');
+	});
+
     $( "#desde, #hasta" ).datepicker();
 
 	$( "#slider-range" ).slider({
