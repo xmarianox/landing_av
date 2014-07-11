@@ -77,7 +77,10 @@
 							<input type="text" name="hasta" id="hasta" placeHolder="22/08/15">
 							<i class="fa fa-calendar"></i>
 						</div>
-
+						
+						<!-- Christian 
+						- 	a partir de 768 los option del combo deberian quedar asi
+						- 	"Personas: 2 / Hab. 1" -->
 						<div class="combo">	
 							<select name="huespedes" id="huespedes">
 								<option value="">Personas: 2 / Habitaciones: 1</option>

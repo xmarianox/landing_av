@@ -800,12 +800,12 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 *  Ajustes Responsive
 *  = = = = = = = = = = = = = = = = */
 /* macbook-pro-13" */
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
 	.lista_hoteles {
 		padding: 23px 0 23px 23px;
 	}
 }
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
     .comp_filtros .control .cols {
         min-width: 194px;
     }
@@ -819,14 +819,14 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
         padding-left: 50px;
     }
 }
-@media (max-width: 1007px){
+@media (max-width: 1007px) {
 	.lista_hoteles {
 		padding: 23px 0 23px 19px;
 	}
 }
-@media (max-width: 960px){}
+@media (max-width: 960px) {}
 /* 890px */
-@media (width: 890px){
+@media (width: 890px) {
     .comp_filtros .control .cols {
         min-width: 168px;
     }
@@ -873,7 +873,7 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     }
 }
 /* IPAD */
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .description_results {
         display: none;
         visibility: hidden;
@@ -891,6 +891,9 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     }
     .combo select {
         width: 221px;
+        font-family: Arial;
+        color: #767576;
+        font-size: 12px;
     }
     #btn_aplicar_filtros {
         width: 301px;
@@ -947,4 +950,29 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
         font-size: 16px;
     }
 }
-@media (max-width: 600px){}
+@media (max-width: 600px) {
+    .content_filtros .control,
+    .comp_search .control {
+        padding: 10px 9px 11px;
+    }
+    .comp_search #lugar {
+        width: 198px;
+        margin-right: 7px;
+        display: block;
+        float: left;
+    }
+    .date {
+        float: left;
+        width: 103px;
+        padding-right: 3px;
+        padding-left: 7px;
+        margin-right: 7px;
+    }
+    .combo {
+        width: 154px;
+    }
+    .combo select {
+        width: 154px;
+
+    }
+}
