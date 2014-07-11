@@ -346,6 +346,7 @@ nav ul li a.active {
 	background: #FFF;
 	padding: 10px;
 	width: 180px;
+    display: none;
 }
 .ui-datepicker-header {
 	height: 24px;
@@ -560,14 +561,14 @@ label.css-label {
 	-ms-user-select: none;
 	user-select: none;
 }
-/* orden */
-.comp_orden input[type=checkbox].css-checkbox + .comp_orden label.css-label, 
-.comp_orden input[type=checkbox].css-checkbox + .comp_orden label.css-label.clr {
-	display: inline-block;
-} 
 .comp_orden label.css-label {
 	background-image:url(../images/csscheckbox_2.png);
 }
+/* orden */
+.comp_orden input[type=checkbox].css-checkbox + label.css-label, 
+.comp_orden input[type=checkbox].css-checkbox + label.css-label.clr {
+    display: inline-block;
+} 
 /* = = = = = = = = = = = = = = = = =
 *  FILTROS DE BUSQUEDA
 *  = = = = = = = = = = = = = = = = */
@@ -620,19 +621,35 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 .comp_filtros .content_btn {
 	min-height: 63px
 }
-#btn_aplicar_filtro {
+#btn_aplicar_filtro,
+#btn_aplicar_orden {
 	width: 301px;
 	height: 31px;
 	margin: 0 auto;
 	display: block;
 }
-#btn_aplicar_filtro p {
+#btn_aplicar_filtro p,
+#btn_aplicar_orden p {
 	display: inline-block;
 }
 /* = = = = = = = = = = = = = = = = =
 *  FILTRO DE ORDEN
 *  = = = = = = = = = = = = = = = = */
-
+.comp_orden {
+    width: 100%;
+    background: #FFF;
+    min-height: 182px;
+    border-bottom: 1px solid #BFBDBE;
+    display: none;
+    overflow: hidden;
+}
+.comp_filtros .control {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 0;
+    min-height: 71px;
+    border-bottom: 1px solid #BFBDBE;
+}
 
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa
