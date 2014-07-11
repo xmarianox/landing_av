@@ -78,6 +78,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 *  = = = = = = = = = = = = = = = = */
 body {
     font-family: Helvetica, sans-serif;
+    background: #E2E1E1;
 }
 #wrapper {
     margin: 0 auto;
@@ -89,6 +90,7 @@ header {
     height: 102px;
     overflow: hidden;
     padding: 15px 17px;
+    background: #FFF;
 }
 header .control {
     width: 100%;
@@ -209,12 +211,17 @@ nav ul li a.active {
     border: 1px solid #004D6B;
     background: #1E70B7;
 }
+.btn-danger {
+    border: 1px solid #E91D26;
+    background: #E91D26;
+    color: #FFF;
+}
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa
 *  = = = = = = = = = = = = = = = = */
 .main {
     width: 100%;
-    background: #E2E1E1;
+    /*background: #E2E1E1;*/
     overflow: hidden;
 }
 /* = = = = = = = = = = = = = = = = =
@@ -796,6 +803,119 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     color: #666666;
+}
+/* = = = = = = = = = =
+*  Sin Resultado - 1
+*  = = = = = = = = = */
+.sin_resultado {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.sin_resultado .content_mensaje {
+    width: 406px;
+    margin: 85px auto;
+}
+.content_mensaje h3 {
+    font-family: 'Stag-Light';
+    font-size: 24px;
+    color: #E71D25;
+    margin-bottom: 23px;
+}
+.content_mensaje p strong {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 12px;
+    display: block;
+}
+.content_mensaje p {
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 18px;
+    color: #666666;
+}
+/* = = = = = = = = = =
+*  Sin Resultado - 2
+*  = = = = = = = = = */
+.sin_hoteles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.sin_hoteles .control {
+    width: 382px;
+    margin: 33px auto;
+}
+.sin_hoteles h3 {
+    font-family: 'Stag-Light';
+    font-size: 23px;
+    color: #E71D25;
+    margin-bottom: 18px;
+}
+.sin_hoteles p {
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 18px;
+    color: #666666;
+    margin-bottom: 24px;
+    display: block;
+}
+.sin_hoteles form {
+    width: 381px;
+    height: 283px;
+    background: #FFF;
+    border: 1px solid #A4A8AB;
+    border-radius: 4px;
+    padding: 23px 24px 20px 15px;
+    overflow: hidden;
+}
+.sin_hoteles #lugar_hotel {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #B1B1B3;
+    border-radius: 4px;
+    display: inline-block;
+    height: 41px;
+    width: 340px;
+    padding: 7px 12px;
+    color: #76787A;
+    margin-bottom: 14px;
+}
+.sin_hoteles .date {
+    width: 164px;
+    height: 41px;
+    margin-bottom: 11px;
+    margin-right: 0;
+    padding: 12px 10px 10px;
+}
+.sin_hoteles .date.first {
+    margin-right: 7px;
+}
+.sin_hoteles .date input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 99px;
+}
+.sin_hoteles .combo select {
+    font-family: Arial;
+    font-size: 16px;
+    height: 41px;
+    width: 340px;
+    color: #767576;   
+}
+.sin_hoteles .combo {
+    height: 41px;
+    width: 340px;
+    margin-bottom: 12px;
+}
+#btn_buscar_hotel {
+    font-family: 'Stag-Semibold';
+    font-size: 18px;
+    height: 49px;
+    width: 340px;
 }
 /* = = = = = = = = = = = = = = = = =
 *  Ajustes Responsive

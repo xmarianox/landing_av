@@ -291,7 +291,7 @@
 
 			</div><!-- .comp_orden -->
 			
-			<div class="resultado">
+			<div class="resultado" style="display: none">
 				<div class="content_mapa">
 					<div class="map-canvas">
 						<img src="images/mapa.jpg" alt="">
@@ -407,6 +407,54 @@
 					</ul>
 				</div><!-- .lista_hoteles -->
 			</div><!-- .resultado -->
+
+			<div class="sin_resultado" style="display: none">
+				<div class="content_mensaje">
+					<h3>No hemos obtenido ningún resultado que se ajuste a tus criterios de búsqueda</h3>
+					<p><strong>Prueba con:</strong></p>
+					<p>Desactiva algunos filtros.<br/>
+					Amplía el área de búsqueda.<br/>
+					Busca una ciudad, una dirección o un punto de referencia.</p>
+				</div>
+			</div>
+
+			<div class="sin_hoteles">
+				<div class="control">
+					<h3>No encontramos hoteles disponibles</h3>
+					<p>Por favor volvé a hacer tu búsqueda modificando fechas, destino o huéspedes por habitación.</p>
+
+					<form action="" type="post">
+
+						<input type="text" name="lugar" id="lugar_hotel" placeHolder="Madrid, España">
+
+						<div class="date first">
+							<input type="text" name="date_desde" id="date_desde" placeHolder="22/08/14">
+							<i class="fa fa-calendar"></i>
+						</div>
+
+						<div class="date">
+							<input type="text" name="date_hasta" id="date_hasta" placeHolder="22/08/15">
+							<i class="fa fa-calendar"></i>
+						</div>
+
+						<input type="checkbox" name="checkboxFecha" id="checkboxFecha" class="css-checkbox" checked="true"/>
+						<label for="checkboxFecha" class="css-label radGroup1">Todavía no he decidido la fecha</label>
+
+						<div class="combo">	
+							<select name="huespedes_hotel" id="huespedes_hotel">
+								<option value="">Personas: 2 / Habitaciones: 1</option>
+								<option value="">Personas: 2 / Habitaciones: 1</option>
+								<option value="">Personas: 2 / Habitaciones: 1</option>
+								<option value="">Personas: 2 / Habitaciones: 1</option>
+							</select>
+						</div><!-- combo -->
+
+						<button class="btn btn-danger" id="btn_buscar_hotel">Buscar hoteles</button>
+					</form><!-- formulario de busqueda -->
+
+				</div>
+			</div>
+
 		</div><!-- .main -->
 
 	</div><!-- #wrapper -->
