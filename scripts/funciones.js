@@ -1,5 +1,5 @@
 /*
-*   Funciones
+*   Funciones Landing AV
 */
 $(document).ready(function () {
 	
@@ -18,9 +18,10 @@ $(document).ready(function () {
 		$('.comp_orden').toggle('swin');
 	});
 
-    $( "#desde, #hasta" ).datepicker();
+    $('#desde, #hasta').datepicker();
 
-	$( "#slider-range" ).slider({
+    // Componente Slider
+	$('#slider-range').slider({
 		range: true,
 		min: 0,
 		max: 5000,

@@ -74,7 +74,7 @@ table { border-collapse: collapse; border-spacing: 0; }
          url('../fonts/Stag-Book.svg#Stag-Book') format('svg');
 }
 /* = = = = = = = = = = = = = = = = =
-*  Layout 
+*   Layout Avant Trip
 *  = = = = = = = = = = = = = = = = */
 body {
     font-family: Helvetica, sans-serif;
@@ -289,7 +289,6 @@ nav ul li a.active {
     color: #76787A;
     padding: 7px 10px;
     margin-right: 10px
-
 }
 .date input {
     font-family: 'Open Sans', sans-serif;
@@ -619,7 +618,8 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     color: #323232;
 }
 .comp_filtros .content_btn {
-	min-height: 63px
+	min-height: 63px;
+    border-bottom: none;
 }
 #btn_aplicar_filtro,
 #btn_aplicar_orden {
@@ -685,7 +685,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     overflow: hidden;
 }
 .content_mapa {
-    /*max-width: 626px;*/
     width: 49%;
     float: left;
     border-right: 1px solid #BFBDBE;
@@ -698,7 +697,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .lista_hoteles {
     float: left;
-    /*max-width: 653px;*/
     width: 51%;
     padding: 23px 28px;
 }
@@ -724,6 +722,7 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     position: relative;
     width: 100%;
     height: 238px;
+    overflow: hidden;
 }
 .item_hotel figure .stars {
     background: rgba(0,0,0,.6);
@@ -792,9 +791,56 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 		padding: 23px 0 23px 23px;
 	}
 }
+@media (max-width: 1024px){}
 @media (max-width: 1007px){
 	.lista_hoteles {
 		padding: 23px 0 23px 19px;
 	}
 }
-
+@media (max-width: 960px){}
+/* 890px */
+@media (max-width: 890px){
+    .comp_filtros .control .cols {
+        min-width: 168px;
+    }
+    .comp_filtros .control .cols:first-child {
+        margin-left: 30px;
+    }
+    .comp_search #lugar {
+        width: 280px;
+    }
+    .combo {
+        width: 221px;
+    }
+    .combo select {
+        width: 221px;
+    }
+    .content_mapa {
+        max-width: 437px;
+    }
+    .item_hotel {
+        width: 194px;
+        height: 191px;
+    }
+    .item_hotel figure {
+        height: 150px
+    }
+    .item_hotel figure figcaption {
+        font-size: 13px;
+        padding: 8px;
+    }
+    .content_details {
+        padding: 9px 8px 8px;
+    }
+    .item_hotel .content_price span {
+        font-size: 12px;
+    }
+    .item_hotel .content_price span .price {
+        font-size: 16px;
+    }
+    .item_hotel .content_price p {
+        font-size: 11px;
+    }
+}
+@media (max-width: 768px){}
+@media (max-width: 600px){}
