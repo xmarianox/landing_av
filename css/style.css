@@ -973,6 +973,46 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     }
     .combo select {
         width: 154px;
-
+    }
+    .content_mapa {
+        max-width: 301px;
+    }
+    .lista_hoteles {
+        max-width: 297px;
+        padding-left: 30px;
+    }
+    /* items */
+    .item_hotel {
+        max-width: 245px;
+        max-height: 241px;
+    }
+    .item_hotel:hover > .content_details {
+        border-top: 3px solid #FFCC05;
+        padding-top: 7px;
+    }
+    .item_hotel figure {
+        height: 194px
+    }
+    .item_hotel figure .stars {
+        padding: 3px 4px;
+        font-size: 10px;
+        border-radius: 16px;
+    }
+    .item_hotel figure figcaption {
+        font-size: 14px;
+        padding: 11px 10px 8px;
+        height: 47px;
+    }
+    .content_details {
+        padding: 10px;
+    }
+    .item_hotel .content_price span {
+        font-size: 13px;
+    }
+    .item_hotel .content_price span .price {
+        font-size: 18px;
+    }
+    .item_hotel .content_price p {
+        font-size: 12px;
     }
 }
