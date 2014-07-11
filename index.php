@@ -249,33 +249,35 @@
 
 			<div class="comp_orden">
 				<div class="control">
-					<div>
-						<h2>Precio</h2>
-						<input type="checkbox" name="checkboxO1" id="checkboxO1" class="css-checkbox" />
-						<label for="checkboxO1" class="css-label radGroup1">Mayor</label>
+					<div class="container">
+						<div class="cols">
+							<h2>Precio</h2>
+							<input type="checkbox" name="checkboxO1" id="checkboxO1" class="css-checkbox" />
+							<label for="checkboxO1" class="css-label radGroup1">Mayor</label>
 
-						<input type="checkbox" name="checkboxO2" id="checkboxO2" class="css-checkbox" />
-						<label for="checkboxO2" class="css-label radGroup1">Menor</label>
-					</div>
+							<input type="checkbox" name="checkboxO2" id="checkboxO2" class="css-checkbox" />
+							<label for="checkboxO2" class="css-label radGroup1">Menor</label>
+						</div>
 
-					<div>
-						<h2>Estrellas</h2>
-						<input type="checkbox" name="checkboxE1" id="checkboxE1" class="css-checkbox" />
-						<label for="checkboxE1" class="css-label radGroup1">Mayor</label>
+						<div class="cols">
+							<h2>Estrellas</h2>
+							<input type="checkbox" name="checkboxE1" id="checkboxE1" class="css-checkbox" />
+							<label for="checkboxE1" class="css-label radGroup1">Mayor</label>
 
-						<input type="checkbox" name="checkboxE2" id="checkboxE2" class="css-checkbox" />
-						<label for="checkboxE2" class="css-label radGroup1">Menor</label>
-					</div>
+							<input type="checkbox" name="checkboxE2" id="checkboxE2" class="css-checkbox" />
+							<label for="checkboxE2" class="css-label radGroup1">Menor</label>
+						</div>
 
-					<div>
-						<h2>Mas Populares</h2>
-						<input type="checkbox" name="checkboxM1" id="checkboxM1" class="css-checkbox" />
-						<label for="checkboxM1" class="css-label radGroup1">Mayor</label>
+						<div class="cols">
+							<h2>Mas Populares</h2>
+							<input type="checkbox" name="checkboxM1" id="checkboxM1" class="css-checkbox" />
+							<label for="checkboxM1" class="css-label radGroup1">Mayor</label>
 
-						<input type="checkbox" name="checkboxM2" id="checkboxM2" class="css-checkbox" />
-						<label for="checkboxM2" class="css-label radGroup1">Menor</label>
-					</div>
-				</div>
+							<input type="checkbox" name="checkboxM2" id="checkboxM2" class="css-checkbox" />
+							<label for="checkboxM2" class="css-label radGroup1">Menor</label>
+						</div>
+					</div><!-- container -->
+					</div><!-- control -->
 
 				<div class="control content_btn">
 					<a href="javascript:;" class="btn btn-primary" id="btn_aplicar_orden">

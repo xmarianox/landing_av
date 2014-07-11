@@ -643,12 +643,36 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     display: none;
     overflow: hidden;
 }
-.comp_filtros .control {
+.comp_orden .control {
     width: 100%;
     overflow: hidden;
     padding: 15px 0;
-    min-height: 71px;
+    min-height: 111px;
     border-bottom: 1px solid #BFBDBE;
+}
+.comp_orden .content_btn {
+    border-bottom: none;
+    min-height: 71px;
+    padding: 19px 0 21px;
+}
+.comp_orden .container {
+    margin: 0 auto;
+    max-width: 593px;
+    width: 100%;
+}
+.comp_orden .container .cols {
+    float: left;
+    width: 165px;
+    margin-right: 48px;
+}
+.comp_orden .container .cols:last-child {
+    margin-right: 0;
+}
+.comp_orden h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 15px 0 13px;
 }
 
 /* = = = = = = = = = = = = = = = = =
