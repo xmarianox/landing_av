@@ -714,6 +714,16 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     margin-right: 22px;
     margin-bottom: 25px;
     float: left;
+    cursor: pointer;
+}
+.item_hotel:hover {
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.item_hotel:hover > .content_details {
+    border-top: 3px solid #FFCC05;
+    padding-top: 7px;
 }
 .item_hotel:nth-child(2n) {
     margin-right: 0px;
@@ -733,6 +743,10 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     font-size: 9px;
     padding: 3px 4px;
     border-radius: 8px;
+}
+.item_hotel figure img {
+    width: 100%;
+    height: auto;
 }
 .item_hotel figure figcaption {
     font-family: 'Open Sans', sans-serif;
@@ -821,6 +835,9 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .item_hotel {
         width: 194px;
         height: 191px;
+    }
+    .item_hotel:hover>.content_details {
+        padding-top: 6px;
     }
     .item_hotel figure {
         height: 150px
