@@ -1146,4 +1146,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .item_hotel .content_price p {
         font-size: 12px;
     }
+    .sin_hoteles .date {
+    	width: 165px;
+    }
+    .sin_hoteles input[type=checkbox].css-checkbox:checked+label.css-label, 
+    .sin_hoteles input[type=checkbox].css-checkbox+label.css-label.chk {
+    	float: left;
+    }
 }
