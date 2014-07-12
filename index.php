@@ -291,14 +291,20 @@
 
 			</div><!-- .comp_orden -->
 			
-			<div class="resultado" style="display: none">
+			<div class="resultado" >
 				<div class="content_mapa">
+					
+					<a href="javascript:;" class="arrow_resul left"><i class="fa fa-chevron-left"></i></a>
+
 					<div class="map-canvas">
 						<img src="images/mapa.jpg" alt="">
 					</div>
 				</div><!-- .content_mapa -->
 
 				<div class="lista_hoteles">
+
+					<a href="javascript:;" class="arrow_resul right"><i class="fa fa-chevron-right"></i></a>
+
 					<ul>
 						<li class="item_hotel">
 							<figure>
@@ -418,7 +424,7 @@
 				</div>
 			</div>
 
-			<div class="sin_hoteles">
+			<div class="sin_hoteles" style="display: none">
 				<div class="control">
 					<h3>No encontramos hoteles disponibles</h3>
 					<p>Por favor volvé a hacer tu búsqueda modificando fechas, destino o huéspedes por habitación.</p>
