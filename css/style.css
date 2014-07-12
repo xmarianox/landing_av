@@ -151,6 +151,7 @@ nav ul li a {
     font-size: 16px;
     text-decoration: none;
     color: #FFF;
+    position: relative;
 }
 nav ul li a:hover {
     color: #F6EB16;
@@ -161,7 +162,18 @@ nav ul li a.active > .fa-bed {
 }
 nav ul li a.active {
     color: #F6EB16;
-    /*background: url(../images/);*/
+}
+nav ul li a.active:after {
+	content: "";
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #FFF;
+	position: absolute;
+	bottom: -7px;
+	left: 50%;
+	right: 50%;
 }
 /* = = = = = = = = = = = = = = = = =
 *  BUTTONS
