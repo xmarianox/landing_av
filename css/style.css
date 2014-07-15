@@ -233,7 +233,6 @@ nav ul li a.active:after {
 *  = = = = = = = = = = = = = = = = */
 .main {
     width: 100%;
-    /*background: #E2E1E1;*/
     overflow: hidden;
 }
 /* = = = = = = = = = = = = = = = = =
@@ -278,7 +277,7 @@ nav ul li a.active:after {
     border-bottom: 1px solid #BFBDBE;
     display: none;
     position: absolute;
-    z-index: 200;
+    z-index: 2000;
 }
 .comp_search .control {
     width: 100%;
@@ -440,7 +439,7 @@ nav ul li a.active:after {
     display: none;
     overflow: hidden;
     position: absolute;
-    z-index: 200;
+    z-index: 2000;
 }
 .comp_filtros .control {
 	width: 100%;
@@ -667,7 +666,7 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     display: none;
     overflow: hidden;
     position: absolute;
-    z-index: 200;
+    z-index: 2000;
 }
 .comp_orden .control {
     width: 100%;
@@ -700,7 +699,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     font-size: 14px;
     margin: 15px 0 13px;
 }
-
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa
 *  = = = = = = = = = = = = = = = = */
@@ -712,7 +710,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .content_mapa {
     width: 49%;
-    /* float: left; */
     border-right: 1px solid #bfbdbe;
     overflow: hidden;
     position: fixed;
@@ -726,7 +723,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     display: block;
 }
 .lista_hoteles {
-    /* float: left; */
     width: 51%;
     padding: 23px 0 23px 39px;
     position: fixed;
