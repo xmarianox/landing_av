@@ -277,6 +277,8 @@ nav ul li a.active:after {
     height: 50px;
     border-bottom: 1px solid #BFBDBE;
     display: none;
+    position: absolute;
+    z-index: 200;
 }
 .comp_search .control {
     width: 100%;
@@ -437,6 +439,8 @@ nav ul li a.active:after {
     border-bottom: 1px solid #BFBDBE;
     display: none;
     overflow: hidden;
+    position: absolute;
+    z-index: 200;
 }
 .comp_filtros .control {
 	width: 100%;
@@ -662,6 +666,8 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     border-bottom: 1px solid #BFBDBE;
     display: none;
     overflow: hidden;
+    position: absolute;
+    z-index: 200;
 }
 .comp_orden .control {
     width: 100%;
@@ -757,7 +763,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .lista_hoteles ul {
     width: 100%;
-    overflow: hidden;
 }
 .item_hotel {
     width: 285px;
