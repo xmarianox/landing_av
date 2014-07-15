@@ -11,7 +11,7 @@
 	<!-- To remove all auto-formatting for telephone numbers -->
 	<meta name="format-detection" content="telephone=no">
 
-	<title>Avant Trip</title>
+	<title>AvanTrip</title>
 
 	<!-- <link rel="shortcut icon" href=""> -->
 	<!-- CSS -->
@@ -308,7 +308,7 @@
 					<ul>
 						<li class="item_hotel">
 							<figure>
-								<img src="images/img-item.png" alt="">
+								<img src="images/" alt="">
 								<div class="stars">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -335,7 +335,7 @@
 
 						<li class="item_hotel">
 							<figure>
-								<img src="images/img-item.png" alt="">
+								<img src="images/" alt="">
 								<div class="stars">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -361,7 +361,7 @@
 
 						<li class="item_hotel">
 							<figure>
-								<img src="images/img-item.png" alt="">
+								<img src="images/" alt="">
 								<div class="stars">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -387,7 +387,7 @@
 
 						<li class="item_hotel">
 							<figure>
-								<img src="images/img-item.png" alt="">
+								<img src="images/" alt="">
 								<div class="stars">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
