@@ -706,10 +706,13 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .content_mapa {
     width: 49%;
-    float: left;
-    border-right: 1px solid #BFBDBE;
+    /* float: left; */
+    border-right: 1px solid #bfbdbe;
     overflow: hidden;
-    position: relative;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 190px;
 }
 .map-canvas {
     width: 100%;
@@ -717,10 +720,15 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     display: block;
 }
 .lista_hoteles {
-    float: left;
+    /* float: left; */
     width: 51%;
     padding: 23px 0 23px 39px;
-    position: relative;
+    position: fixed;
+    right: 0;
+    top: 190px;
+    bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .arrow_resul {
 	position: absolute;
@@ -963,13 +971,13 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .comp_filtros .control .cols {
         min-width: 194px;
     }
-    .content_mapa {
+    /*.content_mapa {
         max-width: 627px;
         width: 100%;
-    }
+    }*/
     .lista_hoteles {
-        max-width: 397px;
-        width: 100%;
+        /*max-width: 397px;
+        width: 100%;*/
         padding-left: 50px;
     }
 }
@@ -992,11 +1000,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .date, .combo {
         float: left;
     }
-    .content_mapa {
+    /*.content_mapa {
         max-width: 468px;
-    }
+    }*/
     .lista_hoteles {
-        max-width: 490px;
+        /*max-width: 490px;*/
         padding: 23px 0 23px 23px;
     }
     .item_hotel {
@@ -1025,11 +1033,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .combo select {
         width: 221px;
     }
-    .content_mapa {
+    /*.content_mapa {
         max-width: 437px;
-    }
+    }*/
     .lista_hoteles {
-        max-width: 440px;
+        /*max-width: 440px;*/
         padding: 23px 0 23px 32px;
     }
     .item_hotel {
@@ -1097,11 +1105,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .comp_filtros .control .cols:first-child {
         margin-left: 0; 
     }
-    .content_mapa {
+    /*.content_mapa {
         max-width: 393px;
-    }
+    }*/
     .lista_hoteles {
-        max-width: 365px;
+        /*max-width: 365px;*/
         padding-left: 35px;
     }
     .item_hotel {
@@ -1172,11 +1180,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .comp_filtros .control .cols {
         min-width: 178px;
     }
-    .content_mapa {
+    /*.content_mapa {
         max-width: 301px;
-    }
+    }*/
     .lista_hoteles {
-        max-width: 297px;
+        /*max-width: 297px;*/
         padding-left: 30px;
     }
     /* items */
