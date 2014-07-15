@@ -959,12 +959,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 /* = = = = = = = = = = = = = = = = =
 *  Ajustes Responsive
 *  = = = = = = = = = = = = = = = = */
-/* macbook-pro-13" */
-/*@media (max-width: 1280px) {
-	.lista_hoteles {
-		padding: 23px 0 23px 39px;
-	}
-}*/
 @media (max-width: 1024px) {
     .comp_filtros .control .cols {
         min-width: 194px;
@@ -985,9 +979,34 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 	}
 }
 @media (max-width: 960px) {
+    .content_filtros .control {
+        padding: 10px 15px 11px 17px;
+    }
+    .comp_search .control {
+        padding: 10px 15px 11px 17px;
+    }
+    .comp_search #lugar {
+       width: 363px;
+       float: left;
+    }
+    .date, .combo {
+        float: left;
+    }
     .content_mapa {
-        max-width: 540px;
-    }   
+        max-width: 468px;
+    }
+    .lista_hoteles {
+        max-width: 490px;
+        padding: 23px 0 23px 23px;
+    }
+    .item_hotel {
+        width: 220px;
+        height: 217px;
+        margin-right: 15px;
+    }
+    .item_hotel figure {
+        height: 170px;
+    }
 }
 /* 890px */
 @media (width: 890px) {
@@ -998,7 +1017,7 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
         margin-left: 30px;
     }
     .comp_search #lugar {
-        width: 280px;
+        width: 302px;
     }
     .combo {
         width: 221px;
@@ -1009,9 +1028,14 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .content_mapa {
         max-width: 437px;
     }
+    .lista_hoteles {
+        max-width: 440px;
+        padding: 23px 0 23px 32px;
+    }
     .item_hotel {
         width: 194px;
         height: 191px;
+        margin-right: 18px;
     }
     .item_hotel:hover > .content_details {
         padding-top: 6px;
