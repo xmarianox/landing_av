@@ -1009,6 +1009,18 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
         width: 100%;
     }
 }
+/* 890px */
+@media (max-width: 800px) {
+    .comp_search #lugar {
+        width: 240px;
+    }
+    .combo {
+        width: 192px;
+    }
+    .combo select {
+        width: 192px;
+    }
+}
 /* IPAD */
 @media (max-width: 768px) {
     .description_results {
