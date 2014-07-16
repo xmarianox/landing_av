@@ -785,7 +785,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     overflow: hidden;
     cursor: pointer;
     border: none;
-    /*height: 285px;*/
 }
 .item_hotel:hover {
     -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
@@ -798,9 +797,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .item_hotel figure {
     position: relative;
-/*    width: 100%;
-    height: 238px;
-    overflow: hidden;*/
 }
 .item_hotel figure .stars {
     background: rgba(0,0,0,.6);
@@ -978,21 +974,21 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 /* = = = = = = = = = = = = = = = = =
 *  Ajustes Responsive
 *  = = = = = = = = = = = = = = = = */
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
     .comp_filtros .control .cols {
         min-width: 194px;
     }
-/*    .lista_hoteles {
+    .lista_hoteles {
         max-width: 397px;
         width: 100%;
         padding-left: 50px;
-    }*/
+    }
 }
 @media (max-width: 1007px) {
-/*	.lista_hoteles {
+	.lista_hoteles {
 		padding: 23px 0 23px 19px;
-	}*/
-}
+	}
+}*/
 @media (max-width: 960px) {
     .content_filtros .control {
         padding: 10px 15px 11px 17px;
@@ -1007,24 +1003,24 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .date, .combo {
         float: left;
     }
-    /*.content_mapa {
+/*    .content_mapa {
         max-width: 468px;
     }
     .lista_hoteles {
         max-width: 490px;
         padding: 23px 0 23px 23px;
-    }*/
+    }
     .item_hotel {
-        /*width: 220px;*/
+        width: 220px;
         height: 217px;
-        /*margin-right: 15px;*/
+        margin-right: 15px;
     }
     .item_hotel figure {
         height: 170px;
-    }
+    }*/
 }
 /* 890px */
-@media (width: 890px) {
+@media (max-width: 890px) {
     .comp_filtros .control .cols {
         min-width: 168px;
     }
@@ -1042,8 +1038,8 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     }
     /*.content_mapa {
         max-width: 437px;
-    }*/
-    /*.lista_hoteles {
+    }
+    .lista_hoteles {
         max-width: 440px;
         padding: 23px 0 23px 32px;
     }
@@ -1052,7 +1048,10 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
         height: 191px;
         margin-right: 18px;
     }*/
-    .item_hotel:hover > .content_details {
+    .listings-container > .col-6 {
+        width: 100%;
+    }
+    /*.item_hotel:hover > .content_details {
         padding-top: 6px;
     }
     .item_hotel figure {
@@ -1073,7 +1072,7 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     }
     .item_hotel .content_price p {
         font-size: 11px;
-    }
+    }*/
 }
 /* IPAD */
 @media (max-width: 768px) {
@@ -1112,17 +1111,17 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .comp_filtros .control .cols:first-child {
         margin-left: 0; 
     }
-    /*.content_mapa {
+/*    .content_mapa {
         max-width: 393px;
-    }*/
-    /*.lista_hoteles {
+    }
+    .lista_hoteles {
         max-width: 365px;
         padding-left: 35px;
     }
     .item_hotel {
         width: 310px;
         height: 305px;
-    }*/
+    }
     .item_hotel:hover > .content_details {
         border-top: 7px solid #FFCC05;
         padding-top: 11px;
@@ -1151,7 +1150,7 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     }
     .item_hotel .content_price p {
         font-size: 16px;
-    }
+    }*/
 }
 @media (max-width: 600px) {
     .content_filtros .control,
@@ -1187,17 +1186,17 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .comp_filtros .control .cols {
         min-width: 178px;
     }
-    /*.content_mapa {
+/*    .content_mapa {
         max-width: 301px;
-    }*/
-    /*.lista_hoteles {
+    }
+    .lista_hoteles {
         max-width: 297px;
         padding-left: 30px;
     }
     .item_hotel {
         width: 245px;
         height: 241px;
-    }*/
+    }
     .item_hotel:hover > .content_details {
         border-top: 3px solid #FFCC05;
         padding-top: 7px;
@@ -1226,7 +1225,7 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     }
     .item_hotel .content_price p {
         font-size: 12px;
-    }
+    }*/
     .sin_hoteles .date {
     	width: 165px;
     }
