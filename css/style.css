@@ -708,6 +708,31 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     margin: 0 auto;
     overflow: hidden;
 }
+.arrow_resul {
+    position: fixed;
+    display: block;
+    top: 214px;
+    z-index: 600;
+    width: 22px;
+    background: #1893CF;
+    border: 1px solid #1A66B1;
+    height: 23px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 4px;
+}
+.arrow_resul.left {
+    right: 51%;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.arrow_resul.right {
+    left: 49%;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
 .content_mapa {
     width: 49%;
     border-right: 1px solid #bfbdbe;
@@ -724,7 +749,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .lista_hoteles {
     width: 51%;
-    padding: 23px 0 23px 39px;
     position: fixed;
     right: 0;
     top: 190px;
@@ -732,45 +756,36 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
-.arrow_resul {
-	position: fixed;
-	display: block;
-	top: 214px;
-	z-index: 600;
-	width: 22px;
-	background: #1893CF;
-	border: 1px solid #1A66B1;
-	height: 23px;
-	color: #FFF;
-	text-decoration: none;
-	font-size: 13px;
-	text-align: center;
-	padding-top: 4px;
+.outer-listings-container {
+    position: relative;
+    margin: 0;
+    padding: 23px 20px 23px 35px;
 }
-.arrow_resul.left {
-	right: 51%;
-	border-bottom-left-radius: 4px;
-	border-top-left-radius: 4px;
+.listings-container {
+    margin-left: -6.25px;
+    margin-right: -6.25px;
 }
-.arrow_resul.right {
-	left: 49%;
-	border-bottom-right-radius: 4px;
-	border-top-right-radius: 4px;
+.listings-container:before,
+.listings-container:after {
+    content: " ";
+    display: table;
 }
-.lista_hoteles ul {
-    width: 100%;
+.listings-container > .col-6 {
+    width: 50%;
+    padding-left: 10.25px;
+    padding-right: 10.25px;
+    float: left;
+    position: relative;
+    min-height: 1px;
 }
 .item_hotel {
-    width: 285px;
-    height: 285px;
     border-radius: 8px;
     background-color: #FFF;
-    overflow: hidden;
-    margin-right: 22px;
     margin-bottom: 25px;
-    float: left;
+    overflow: hidden;
     cursor: pointer;
     border: none;
+    /*height: 285px;*/
 }
 .item_hotel:hover {
     -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
@@ -781,14 +796,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     border-top: 3px solid #FFCC05;
     padding-top: 6px;
 }
-.item_hotel:nth-child(2n) {
-    margin-right: 0px;
-}
 .item_hotel figure {
     position: relative;
-    width: 100%;
+/*    width: 100%;
     height: 238px;
-    overflow: hidden;
+    overflow: hidden;*/
 }
 .item_hotel figure .stars {
     background: rgba(0,0,0,.6);
@@ -816,7 +828,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     right: 0;
     width: 100%;
     color: #FFF;
-    height: 47px;
 }
 /* = = = = = = = = = =
 *  Resultado Mapa
@@ -824,7 +835,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 .content_details {
     padding: 9px 10px;
     width: 100%;
-    height: auto;
     overflow: hidden;
 }
 .item_hotel .trip {
@@ -972,20 +982,16 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .comp_filtros .control .cols {
         min-width: 194px;
     }
-    /*.content_mapa {
-        max-width: 627px;
+/*    .lista_hoteles {
+        max-width: 397px;
         width: 100%;
-    }*/
-    .lista_hoteles {
-        /*max-width: 397px;
-        width: 100%;*/
         padding-left: 50px;
-    }
+    }*/
 }
 @media (max-width: 1007px) {
-	.lista_hoteles {
+/*	.lista_hoteles {
 		padding: 23px 0 23px 19px;
-	}
+	}*/
 }
 @media (max-width: 960px) {
     .content_filtros .control {
@@ -1003,15 +1009,15 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     }
     /*.content_mapa {
         max-width: 468px;
-    }*/
-    .lista_hoteles {
-        /*max-width: 490px;*/
-        padding: 23px 0 23px 23px;
     }
+    .lista_hoteles {
+        max-width: 490px;
+        padding: 23px 0 23px 23px;
+    }*/
     .item_hotel {
-        width: 220px;
+        /*width: 220px;*/
         height: 217px;
-        margin-right: 15px;
+        /*margin-right: 15px;*/
     }
     .item_hotel figure {
         height: 170px;
@@ -1037,15 +1043,15 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     /*.content_mapa {
         max-width: 437px;
     }*/
-    .lista_hoteles {
-        /*max-width: 440px;*/
+    /*.lista_hoteles {
+        max-width: 440px;
         padding: 23px 0 23px 32px;
     }
     .item_hotel {
         width: 194px;
         height: 191px;
         margin-right: 18px;
-    }
+    }*/
     .item_hotel:hover > .content_details {
         padding-top: 6px;
     }
@@ -1109,14 +1115,14 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     /*.content_mapa {
         max-width: 393px;
     }*/
-    .lista_hoteles {
-        /*max-width: 365px;*/
+    /*.lista_hoteles {
+        max-width: 365px;
         padding-left: 35px;
     }
     .item_hotel {
         width: 310px;
         height: 305px;
-    }
+    }*/
     .item_hotel:hover > .content_details {
         border-top: 7px solid #FFCC05;
         padding-top: 11px;
@@ -1184,15 +1190,14 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     /*.content_mapa {
         max-width: 301px;
     }*/
-    .lista_hoteles {
-        /*max-width: 297px;*/
+    /*.lista_hoteles {
+        max-width: 297px;
         padding-left: 30px;
     }
-    /* items */
     .item_hotel {
         width: 245px;
         height: 241px;
-    }
+    }*/
     .item_hotel:hover > .content_details {
         border-top: 3px solid #FFCC05;
         padding-top: 7px;

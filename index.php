@@ -305,112 +305,99 @@
 
 					<a href="javascript:;" class="arrow_resul right"><i class="fa fa-chevron-right"></i></a>
 
-					<ul>
-						<li class="item_hotel">
-							<figure>
-								<img src="images/" alt="">
-								<div class="stars">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<figcaption>
-									<h2>The Deauville Beach Resort</h2>
-									<p><i class="fa fa-map-marker"></i>&nbsp; Lavapies, Madrid, España</p>
-								</figcaption>
-							</figure>
+					<div class="outer-listings-container">
+						<ul class="listings-container">
 							
-							<div class="content_details">
-								<div class="trip">
-									<i class="fa fa-trip"></i>
-									<i class="fa fa-calif"></i>
-								</div>
-								<div class="content_price">
-									<span>AR$ <span class="price">510</span></span>
-									<p>Por noche</p>
-								</div>
-							</div>
-						</li><!-- item_hotel -->
+							<li class="col-6">
+								<div class="item_hotel">
+									<figure>
+										<img src="images/img-item.png" alt="">
+										<div class="stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<figcaption>
+											<h2>The Deauville Beach Resort</h2>
+											<p><i class="fa fa-map-marker"></i>&nbsp; Lavapies, Madrid, España</p>
+										</figcaption>
+									</figure>
+									
+									<div class="content_details">
+										<div class="trip">
+											<i class="fa fa-trip"></i>
+											<i class="fa fa-calif"></i>
+										</div>
+										<div class="content_price">
+											<span>AR$ <span class="price">510</span></span>
+											<p>Por noche</p>
+										</div>
+									</div>
+								</div><!-- item_hotel -->
+							</li><!-- col-6 -->
 
-						<li class="item_hotel">
-							<figure>
-								<img src="images/" alt="">
-								<div class="stars">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<figcaption>
-									<h2>The Deauville Beach Resort</h2>
-									<p><i class="fa fa-map-marker"></i>&nbsp; Lavapies, Madrid, España</p>
-								</figcaption>
-							</figure>
-							<div class="content_details">
-								<div class="trip">
-									<i class="fa fa-trip"></i>
-									<i class="fa fa-calif"></i>
-								</div>
-								<div class="content_price">
-									<span>AR$ <span class="price">510</span></span>
-									<p>Por noche</p>
-								</div>
-							</div>
-						</li><!-- item_hotel -->
+							<li class="col-6">
+								<div class="item_hotel">
+									<figure>
+										<img src="images/" alt="">
+										<div class="stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<figcaption>
+											<h2>The Deauville Beach Resort</h2>
+											<p><i class="fa fa-map-marker"></i>&nbsp; Lavapies, Madrid, España</p>
+										</figcaption>
+									</figure>
+									
+									<div class="content_details">
+										<div class="trip">
+											<i class="fa fa-trip"></i>
+											<i class="fa fa-calif"></i>
+										</div>
+										<div class="content_price">
+											<span>AR$ <span class="price">510</span></span>
+											<p>Por noche</p>
+										</div>
+									</div>
+								</div><!-- item_hotel -->
+							</li><!-- col-6 -->
 
-						<li class="item_hotel">
-							<figure>
-								<img src="images/" alt="">
-								<div class="stars">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<figcaption>
-									<h2>The Deauville Beach Resort</h2>
-									<p><i class="fa fa-map-marker"></i>&nbsp; Lavapies, Madrid, España</p>
-								</figcaption>
-							</figure>
-							<div class="content_details">
-								<div class="trip">
-									<i class="fa fa-trip"></i>
-									<i class="fa fa-calif"></i>
-								</div>
-								<div class="content_price">
-									<span>AR$ <span class="price">510</span></span>
-									<p>Por noche</p>
-								</div>
-							</div>
-						</li><!-- item_hotel -->
+							<li class="col-6">
+								<div class="item_hotel">
+									<figure>
+										<img src="images/" alt="">
+										<div class="stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<figcaption>
+											<h2>The Deauville Beach Resort</h2>
+											<p><i class="fa fa-map-marker"></i>&nbsp; Lavapies, Madrid, España</p>
+										</figcaption>
+									</figure>
+									
+									<div class="content_details">
+										<div class="trip">
+											<i class="fa fa-trip"></i>
+											<i class="fa fa-calif"></i>
+										</div>
+										<div class="content_price">
+											<span>AR$ <span class="price">510</span></span>
+											<p>Por noche</p>
+										</div>
+									</div>
+								</div><!-- item_hotel -->
+							</li><!-- col-6 -->
 
-						<li class="item_hotel">
-							<figure>
-								<img src="images/" alt="">
-								<div class="stars">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<figcaption>
-									<h2>The Deauville Beach Resort</h2>
-									<p><i class="fa fa-map-marker"></i>&nbsp; Lavapies, Madrid, España</p>
-								</figcaption>
-							</figure>
-							<div class="content_details">
-								<div class="trip">
-									<i class="fa fa-trip"></i>
-									<i class="fa fa-calif"></i>
-								</div>
-								<div class="content_price">
-									<span>AR$ <span class="price">510</span></span>
-									<p>Por noche</p>
-								</div>
-							</div>
-						</li><!-- item_hotel -->
-					</ul>
+							
+						</ul>
+					</div>
 				</div><!-- .lista_hoteles -->
 			</div><!-- .resultado -->
 
