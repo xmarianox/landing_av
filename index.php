@@ -320,6 +320,30 @@
 
 						<a style="cursor: pointer" id="arrow-l" class="arrow_resul left"><i class="fa fa-chevron-left"></i></a>
 
+
+<!--// baloon //		<div class="map_baloon">
+							<a href="javascript:;" class="btn_close_baloon">cerrar</a>
+							<div class="item_hotel" id="map-item-174245">
+								<figure>
+									<img src="http://media.expedia.com/hotels/1000000/10000/7500/7498/7498_117_b.jpg" alt="The Manhattan at Times Square Hotel">
+									<div class="stars">
+										<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+									</div>
+									<figcaption>
+										<h2>The Manhattan at Times Square Hotel</h2>
+										<p><i class="fa fa-map-marker"></i>&nbsp; New York, US</p>
+									</figcaption>
+								</figure>
+								<div class="content_details">
+									<div class="trip"><i class="fa fa-trip"></i><i class="fa fa-calif"></i></div>
+									<div class="content_price">
+										<span>AR$ <span class="price">510</span></span>
+										<p>Por noche</p>
+									</div>
+								</div>
+							</div>
+						</div> //-->
+						
 						<div class="map-canvas" id="map-canvas">							
 						</div>
 					</div><!-- .content_mapa -->
