@@ -158,7 +158,8 @@ $(document).ready(function () {
 					        marker = new google.maps.Marker({
 					            position: position,
 					            map: map,
-					            title: item.name
+					            title: item.name,
+					            icon: 'images/marker.png'
 					        });
 					        
 					        var itemCard = '<li class="col-6 map_item" data-item-id="'+item.id+'" data-item-lat="'+item.location.latitude+'" data-item-long="'+item.location.longitude+'">';
@@ -199,7 +200,32 @@ $(document).ready(function () {
 					        					        
 					        google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					            return function() {
-					            	var infoWindowContent = '<div class="infowindow"><h3>'+item.name+'</h3></div>'
+					            	
+								var infoWindowContent = '<div class="map_baloon">';
+									infoWindowContent += '<a href="javascript:;" class="btn_close_baloon">cerrar</a>';
+									infoWindowContent += '<div class="item_hotel" id="map-item-174245">';
+									infoWindowContent += '<figure>';
+									infoWindowContent += '<img src="'+itemImage+'" alt="'+item.name+'">';
+									infoWindowContent += '<div class="stars">';
+									for(s=0;s<Math.round(item.starsRating);s++) {
+									infoWindowContent += '<i class="fa fa-star"></i>';
+									}
+									infoWindowContent += '</div>';
+									infoWindowContent += '<figcaption>';
+									infoWindowContent += '<h2>'+item.name+'</h2>';
+									infoWindowContent += '<p><i class="fa fa-map-marker"></i>&nbsp; '+item.location.city+', '+item.location.country+'</p>';
+									infoWindowContent += '</figcaption>';
+									infoWindowContent += '</figure>';
+									infoWindowContent += '<div class="content_details">';
+									infoWindowContent += '<div class="trip"><i class="fa fa-trip"></i><i class="fa fa-calif"></i></div>';
+									infoWindowContent += '<div class="content_price">';
+									infoWindowContent += '<span>AR$ <span class="price">510</span></span>';
+									infoWindowContent += '<p>Por noche</p>';
+									infoWindowContent += '</div>';
+									infoWindowContent += '</div>';
+									infoWindowContent += '</div>';
+									infoWindowContent += '</div>';
+					            						           					            	
 					                infoWindow.setContent(infoWindowContent);
 					                infoWindow.open(map, marker);
 					            }
