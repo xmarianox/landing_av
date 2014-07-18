@@ -41,6 +41,71 @@ $(document).ready(function () {
 	  map.setZoom(16);
 	});
 	
+	var currentView='49-51';
+
+	$('.arrow_resul').click(function() {
+		
+		if($(this).hasClass('right')) {
+			
+			console.log('right ' + currentView);
+			
+			if(currentView=='49-51') {
+				$('.content_mapa').width('76%');
+				$('.lista_hoteles').width('24%');
+				currentView = '76-24';
+				console.log(currentView);
+				return true;
+			}
+			
+			if(currentView=='76-24') {
+				$('.content_mapa').width('100%');
+				$('.lista_hoteles').width('0%');
+				currentView = '100-0';
+				console.log(currentView);
+				return true;
+			}
+
+			if(currentView=='24-76') {
+				$('.content_mapa').width('49%');
+				$('.lista_hoteles').width('51%');
+				currentView = '49-51';
+				console.log(currentView);
+				return true;
+			}
+			
+		} else {
+			
+			console.log('left ' + currentView);
+
+			if(currentView=='49-51') {
+				$('.content_mapa').width('26%');
+				$('.lista_hoteles').width('76%');
+				currentView = '24-76';
+				console.log(currentView);
+				return true;
+			}
+			
+			if(currentView=='24-76') {
+				$('.content_mapa').width('0%');
+				$('.lista_hoteles').width('100%');
+				currentView = '100-0';
+				console.log(currentView);
+				return true;
+			}
+
+			if(currentView=='76-24') {
+				$('.content_mapa').width('49%');
+				$('.lista_hoteles').width('51%');
+				currentView = '49-51';
+				console.log(currentView);
+				return true;
+			}
+
+			
+		}
+
+	});
+	
 });
 
 			var map;
