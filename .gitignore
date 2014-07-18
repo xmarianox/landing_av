@@ -35,3 +35,8 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Configuracion del proyecto
+############################
+landing_av.sublime-project
+landing_av.sublime-workspace

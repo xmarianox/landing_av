@@ -711,11 +711,14 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     margin: 0 auto;
     overflow: hidden;
 }
+.content_arrow {
+	position: fixed;
+	top: 214px;
+	right: 624px;
+	z-index: 600;
+}
 .arrow_resul {
-    position: fixed;
-    display: block;
-    top: 214px;
-    z-index: 600;
+    display: inline-block;
     width: 22px;
     background: #1893CF;
     border: 1px solid #1A66B1;
@@ -725,14 +728,13 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     font-size: 13px;
     text-align: center;
     padding-top: 4px;
+    float: left;
 }
 .arrow_resul.left {
-    right: 51%;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
 }
 .arrow_resul.right {
-    left: 49%;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
 }
