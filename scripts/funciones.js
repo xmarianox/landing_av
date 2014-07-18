@@ -116,7 +116,7 @@ $(document).ready(function () {
 					        					        
 					        google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					            return function() {
-					            	var infoWindowContent = '<h3>'+item.name+'</h3>'
+					            	var infoWindowContent = '<div class="infowindow"><h3>'+item.name+'</h3></div>'
 					                infoWindow.setContent(infoWindowContent);
 					                infoWindow.open(map, marker);
 					            }
