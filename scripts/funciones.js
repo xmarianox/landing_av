@@ -81,6 +81,17 @@ $(document).ready(function () {
 				console.log(currentView);
 				return true;
 			}
+
+			if(currentView=='100-0') {
+				$('.content_mapa').width('24%');
+				$('#arrow-r').css('left','24%')
+				$('#arrow-l').css('right','76%')
+				$('.lista_hoteles').width('76%');			
+				currentView = '24-76';
+				initialize();
+				console.log(currentView);
+				return true;
+			}
 			
 		} else {
 			
@@ -114,6 +125,17 @@ $(document).ready(function () {
 				$('#arrow-l').css('right','51%')				
 				$('.lista_hoteles').width('51%');
 				currentView = '49-51';
+				initialize();
+				console.log(currentView);
+				return true;
+			}
+
+			if(currentView=='100-0') {
+				$('.content_mapa').width('76%');
+				$('#arrow-r').css('left','76%')
+				$('#arrow-l').css('right','24%')				
+				$('.lista_hoteles').width('24%');
+				currentView = '76-24';
 				initialize();
 				console.log(currentView);
 				return true;
