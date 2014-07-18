@@ -51,6 +51,8 @@ $(document).ready(function () {
 			
 			if(currentView=='49-51') {
 				$('.content_mapa').width('76%');
+				$('#arrow-r').css('left','76%')
+				$('#arrow-l').css('right','24%')
 				$('.lista_hoteles').width('24%');
 				currentView = '76-24';
 				console.log(currentView);
@@ -59,6 +61,8 @@ $(document).ready(function () {
 			
 			if(currentView=='76-24') {
 				$('.content_mapa').width('100%');
+				$('#arrow-r').css('left','100%')
+				$('#arrow-l').css('right','0%')
 				$('.lista_hoteles').width('0%');
 				currentView = '100-0';
 				console.log(currentView);
@@ -67,7 +71,9 @@ $(document).ready(function () {
 
 			if(currentView=='24-76') {
 				$('.content_mapa').width('49%');
-				$('.lista_hoteles').width('51%');
+				$('#arrow-r').css('left','49%')
+				$('#arrow-l').css('right','51%')
+				$('.lista_hoteles').width('51%');				
 				currentView = '49-51';
 				console.log(currentView);
 				return true;
@@ -78,7 +84,9 @@ $(document).ready(function () {
 			console.log('left ' + currentView);
 
 			if(currentView=='49-51') {
-				$('.content_mapa').width('26%');
+				$('.content_mapa').width('24%');
+				$('#arrow-r').css('left','24%')
+				$('#arrow-l').css('right','76%')
 				$('.lista_hoteles').width('76%');
 				currentView = '24-76';
 				console.log(currentView);
@@ -87,6 +95,8 @@ $(document).ready(function () {
 			
 			if(currentView=='24-76') {
 				$('.content_mapa').width('0%');
+				$('#arrow-r').css('left','0%')
+				$('#arrow-l').css('right','100%')
 				$('.lista_hoteles').width('100%');
 				currentView = '100-0';
 				console.log(currentView);
@@ -95,6 +105,8 @@ $(document).ready(function () {
 
 			if(currentView=='76-24') {
 				$('.content_mapa').width('49%');
+				$('#arrow-r').css('left','49%')
+				$('#arrow-l').css('right','51%')				
 				$('.lista_hoteles').width('51%');
 				currentView = '49-51';
 				console.log(currentView);

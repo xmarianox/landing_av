@@ -318,7 +318,7 @@
 				<div class="resultado" >
 					<div class="content_mapa">
 
-						<a style="cursor: pointer" class="arrow_resul left"><i class="fa fa-chevron-left"></i></a>
+						<a style="cursor: pointer" id="arrow-l" class="arrow_resul left"><i class="fa fa-chevron-left"></i></a>
 
 						<div class="map-canvas" id="map-canvas">							
 						</div>
@@ -326,7 +326,7 @@
 
 					<div class="lista_hoteles">
 
-						<a style="cursor: pointer" class="arrow_resul right"><i class="fa fa-chevron-right"></i></a>
+						<a style="cursor: pointer" id="arrow-r" class="arrow_resul right"><i class="fa fa-chevron-right"></i></a>
 
 						<div class="outer-listings-container">
 							<ul class="listings-container">
