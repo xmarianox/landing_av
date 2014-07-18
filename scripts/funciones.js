@@ -56,6 +56,7 @@ $(document).ready(function () {
 				$('.lista_hoteles').width('24%');
 				currentView = '76-24';
 				console.log(currentView);
+				initialize();
 				return true;
 			}
 			
@@ -65,6 +66,7 @@ $(document).ready(function () {
 				$('#arrow-l').css('right','0%')
 				$('.lista_hoteles').width('0%');
 				currentView = '100-0';
+				initialize();
 				console.log(currentView);
 				return true;
 			}
@@ -75,6 +77,7 @@ $(document).ready(function () {
 				$('#arrow-l').css('right','51%')
 				$('.lista_hoteles').width('51%');				
 				currentView = '49-51';
+				initialize();
 				console.log(currentView);
 				return true;
 			}
@@ -89,6 +92,7 @@ $(document).ready(function () {
 				$('#arrow-l').css('right','76%')
 				$('.lista_hoteles').width('76%');
 				currentView = '24-76';
+				initialize();
 				console.log(currentView);
 				return true;
 			}
@@ -99,6 +103,7 @@ $(document).ready(function () {
 				$('#arrow-l').css('right','100%')
 				$('.lista_hoteles').width('100%');
 				currentView = '100-0';
+				initialize();
 				console.log(currentView);
 				return true;
 			}
@@ -109,6 +114,7 @@ $(document).ready(function () {
 				$('#arrow-l').css('right','51%')				
 				$('.lista_hoteles').width('51%');
 				currentView = '49-51';
+				initialize();
 				console.log(currentView);
 				return true;
 			}
