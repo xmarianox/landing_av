@@ -337,9 +337,24 @@
 
 					<div class="lista_hoteles">
 						<div class="outer-listings-container">
+							
+							<a href="javascript:;" title="Compartir resultados" id="btn_share"><i class="fa fa-share-alt"></i> Compartir resultados</a>
+
 							<ul class="listings-container">
-							</ul>
-						</div>
+							</ul><!-- .listings-container -->
+
+							<div class="content-pager-result">
+								<a href="javascript:;" class="btn btn-basic disable" title="Anterior" >Anterior</a>
+								
+								<ul id="pagination">
+									<li><a href="javascript:;" class="btn btn-basic">1</a></li>
+									<li><a href="javascript:;" class="btn btn-basic">2</a></li>
+									<li><a href="javascript:;" class="btn btn-basic">3</a></li>
+								</ul>
+								
+								<a href="javascript:;" class="btn btn-basic" title="Próximo >">Próximo ></a>
+							</div>
+						</div><!-- outer-listings-container -->
 					</div><!-- .lista_hoteles -->
 				</div><!-- .resultado -->
 

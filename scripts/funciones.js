@@ -176,14 +176,6 @@ function changeForm(e) {
 		xPos;
 
 	highlight.css({'left':label.position().left + marginLeft, 'width':label.width() });
-
-	/*// page change stuff
-	xPos = '-' + label.index() * 50;
-	$('#content').css( 'transform', 'translateX(' + xPos + '%)' );
-
-	setTimeout(function(){
-		$('#content').find('.' + page  + ' :input')[0].focus();
-	}, 100);*/
 }
 
 /*
@@ -228,7 +220,7 @@ function initialize() {
 		        var itemCard = '<li class="col-6 map_item" data-item-id="'+item.id+'" data-item-lat="'+item.location.latitude+'" data-item-long="'+item.location.longitude+'">';
 					itemCard += '<div class="item_hotel" id="map-item-'+item.id+'">';
 					itemCard += '<figure>';
-					itemCard += '<img width="290" height="238" src="'+itemImage+'" alt="'+item.name+'">';
+					itemCard += '<img src="'+itemImage+'" alt="'+item.name+'">';
 					itemCard += '<div class="stars">';								
 					
 					for(s=0;s<Math.round(item.starsRating);s++) {
