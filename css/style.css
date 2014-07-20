@@ -797,8 +797,8 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 	right: 624px;
 	*/
 	position: absolute;
-	top: 24px;
-	right: -22px;
+	top: 220px;
+	left: 605px;
 	z-index: 600;
 }
 .arrow_resul {
