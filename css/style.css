@@ -826,7 +826,8 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     width: 49%;
     border-right: 1px solid #bfbdbe;
     /*overflow: hidden;*/
-    position: fixed;
+    /*position: fixed;*/
+    position: absolute;
     left: 0;
     bottom: 0;
     top: 190px;
@@ -838,7 +839,8 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .lista_hoteles {
     width: 51%;
-    position: fixed;
+    /*position: fixed;*/
+    position: absolute;
     right: 0;
     top: 190px;
     bottom: 0;

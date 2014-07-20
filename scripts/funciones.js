@@ -18,6 +18,10 @@ $(document).ready(function () {
 		$('.comp_orden').toggle('swin');
 	});
 
+	$('#btn_share').click(function() {
+		$('.content-share-search').toggle('fade');
+	});
+
 	// Switch (fancy inputs)
 	$('menu.radio input').fancyInput();
 	$('menu.radio').on('change', 'input', changeForm).find('input:first').prop('checked',true).trigger('change');
@@ -220,7 +224,7 @@ function initialize() {
 		        var itemCard = '<li class="col-6 map_item" data-item-id="'+item.id+'" data-item-lat="'+item.location.latitude+'" data-item-long="'+item.location.longitude+'">';
 					itemCard += '<div class="item_hotel" id="map-item-'+item.id+'">';
 					itemCard += '<figure>';
-					itemCard += '<img src="'+itemImage+'" alt="'+item.name+'">';
+					itemCard += '<img width="290" height="238" src="'+itemImage+'" alt="'+item.name+'">';
 					itemCard += '<div class="stars">';								
 					
 					for(s=0;s<Math.round(item.starsRating);s++) {
