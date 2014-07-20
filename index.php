@@ -325,12 +325,18 @@
 
 				<div class="resultado" >
 
-					<div class="content_arrow">
+					<!-- <div class="content_arrow">
 						<a style="cursor: pointer" id="arrow-l" class="arrow_resul left"><i class="fa fa-chevron-left"></i></a>
 						<a style="cursor: pointer" id="arrow-r" class="arrow_resul right"><i class="fa fa-chevron-right"></i></a>
-					</div>
+					</div> -->
 
-					<div class="content_mapa">	
+					<div class="content_mapa">
+
+						<div class="content_arrow">
+							<a style="cursor: pointer" id="arrow-l" class="arrow_resul left"><i class="fa fa-chevron-left"></i></a>
+							<a style="cursor: pointer" id="arrow-r" class="arrow_resul right"><i class="fa fa-chevron-right"></i></a>
+						</div>
+
 						<div class="map-canvas" id="map-canvas">							
 						</div>
 					</div><!-- .content_mapa -->
@@ -339,6 +345,27 @@
 						<div class="outer-listings-container">
 							
 							<a href="javascript:;" title="Compartir resultados" id="btn_share"><i class="fa fa-share-alt"></i> Compartir resultados</a>
+
+							<div class="content-share-search">
+								<h2>Compartir con tus amigos</h2>
+
+								<form action="">
+									
+									<fieldset>
+										<label for="email_friend">A</label>
+										<input type="email" id="email_fried" name="email_fried" placeHolder="Ingresá su mail">
+									</fieldset>
+
+									<fieldset>
+										<label for="email">De</label>
+										<input type="email" id="email" name="email" placeHolder="Ingresá tu mail">
+									</fieldset>
+
+									<label for="mensaje">Mensaje</label>
+									<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+								</form>
+							</div>
 
 							<ul class="listings-container">
 							</ul><!-- .listings-container -->
