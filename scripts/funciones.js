@@ -43,7 +43,18 @@ $(document).ready(function () {
 	
 	var currentView='49-51';
 
-	$('.arrow_resul').click(function() {
+	$("#content_arrow").draggable({
+	    axis: "x",
+	    start: function(event, ui) {
+	        start = ui.position.left;
+	    },
+	    stop: function(event, ui) {
+	        stop = ui.position.left;
+	        alert('has moved ' + ((start < stop) ? 'rigth':'left'))
+	    }
+	});
+
+	/*$('.arrow_resul').click(function() {
 		
 		if($(this).hasClass('right')) {
 			
@@ -144,7 +155,7 @@ $(document).ready(function () {
 			
 		}
 
-	});
+	});*/
 	
 });
 
