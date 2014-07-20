@@ -43,7 +43,7 @@ $(document).ready(function () {
 	
 	var currentView='49-51';
 
-	$("#content_arrow").draggable({
+	$(".content_arrow").draggable({
 	    axis: "x",
 	    start: function(event, ui) {
 	        start = ui.position.left;
