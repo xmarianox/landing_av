@@ -17,6 +17,7 @@
 
 		<!-- <link rel="shortcut icon" href=""> -->
 		<!-- CSS -->
+		<link rel="stylesheet" href="css/fancyInput.css">
 		<link rel="stylesheet" href="css/style.css?v=<?=rand()?>">
 
 		<!-- JS -->
@@ -74,10 +75,11 @@
 						<a href="javascript:;" class="btn btn-primary" id="btn_modif">Modificar búsqueda &nbsp;<i class="fa fa-calendar"></i></a>
 
 						<div class="filtro">
-							<menu class="radio">
-								<label><input type="radio" value="U$D" name="type"><span>U$D (8.22)</span></label>
-								<label><input type="radio" value="AR$" name="type"><span>AR$ Pesos</span></label>
-								<div style="left: 2px; width: 57px;"></div>
+
+							<menu class='radio'>
+								<label><input type='radio' value='U$D' name='moneda' /><span>U$D (8.22)</span></label>
+								<label><input type='radio' value='AR$' name='moneda' /><span>AR$ Pesos</span></label>
+								<div></div>
 							</menu>
 
 							<a href="javascript:;" class="btn btn-default" id="btn_orden"><i class="fa fa-bars"></i>&nbsp; Orden</a>

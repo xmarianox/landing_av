@@ -234,7 +234,6 @@ menu.radio {
     font-weight: 400;
     font-size: 14px;
     display: inline-block;
-    /*padding: 3px 14px 4px;*/
     margin-bottom: 0;
     line-height: 1.42857143;
     text-align: center;
@@ -253,18 +252,23 @@ menu.radio {
 	position: relative;
 	margin-right: 10px;
 }
+menu.radio > div {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	border-radius: 3px;
+	left: 0;
+	z-index: 1;
+	color: #FFF;
+	background: #1DA6DD;
+	-webkit-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
+}
 menu.radio label {
 	display: inline-block;
 	position: relative;
 	z-index: 2;
 	margin: 0;
-}
-menu.radio input {
-	display: none;
-}
-menu.radio :checked ~ span {
-	opacity: 1;
-	color: #FFF;
 }
 menu.radio span {
 	padding: 3px 14px 4px;
@@ -275,16 +279,18 @@ menu.radio span {
 	-webkit-transition: 0.2s ease-out;
 	transition: 0.2s ease-out;
 }
-menu.radio > div {
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	border-radius: 4px;
-	left: 0;
-	z-index: 1;
-	background: #1DA6DD;
-	-webkit-transition: 0.2s ease-out;
-	transition: 0.2s ease-out;
+menu.radio :checked ~ span {
+	opacity: 1;
+	color: #FFF;
+}
+menu.radio label:hover span{ 
+	opacity:1; 
+}
+menu.radio input {
+	display: none;
+}
+menu.radio span span {
+	padding: 0
 }
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa

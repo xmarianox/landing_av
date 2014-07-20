@@ -18,6 +18,11 @@ $(document).ready(function () {
 		$('.comp_orden').toggle('swin');
 	});
 
+	// Switch (fancy inputs)
+	$('menu.radio input').fancyInput();
+	$('menu.radio').on('change', 'input', changeForm).find('input:first').prop('checked',true).trigger('change');
+
+	// Datepicket
     $('#desde, #hasta').datepicker();
 
     // Componente Slider
@@ -159,131 +164,156 @@ $(document).ready(function () {
 	
 });
 
-			var map;
-			
-			function initialize() {
-				var myLatlng = new google.maps.LatLng(26.10876,-80.10676);
-				var mapOptions = {
-					zoom : 8,
-					center : myLatlng
-				}
-				map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-				
-			    var infoWindow = new google.maps.InfoWindow(), marker, i;
-			    var marker;
-			    var bounds = new google.maps.LatLngBounds();
-			    
-                $.ajax({
-                    url: "markers.json",
-                    dataType: "text",
-                    success: function(data) {                        
-                        var json = $.parseJSON(data);
-                        $.each(json.data.abstractDTOs, function(i,item){
-                        	var itemImage = 'images/img-item.png';
-                        	
-                        	$.each(item.images, function(ii,img){
-                        		if(img.defaultimage) {
-                        			itemImage = img.url;
-                        		}
-                        	});
+/*
+* Fancy Inputs
+*/
+function changeForm(e) {
+	// radio buttons stuff
+	var page = this.value,
+		highlight = $(e.delegateTarget).find('> div'),
+		label = $(this.parentNode),
+		marginLeft = parseInt( label.css('margin-left') , 10 ),
+		xPos;
 
-					        var position = new google.maps.LatLng(item.location.latitude, item.location.longitude);
-					        marker = new google.maps.Marker({
-					            position: position,
-					            map: map,
-					            title: item.name,
-					            icon: 'images/marker.png'
-					        });
-					        
-					        var itemCard = '<li class="col-6 map_item" data-item-id="'+item.id+'" data-item-lat="'+item.location.latitude+'" data-item-long="'+item.location.longitude+'">';
-								itemCard += '<div class="item_hotel" id="map-item-'+item.id+'">';
-								itemCard += '<figure>';
-								itemCard += '<img width="290" height="238" src="'+itemImage+'" alt="'+item.name+'">';
-								itemCard += '<div class="stars">';								
-								
-								for(s=0;s<Math.round(item.starsRating);s++) {
-									itemCard += '<i class="fa fa-star"></i>';
-								}								
-								
-								itemCard += '</div>';
-								itemCard += '<figcaption>';
-								itemCard += '<h2>'+item.name+'</h2>';
-								itemCard += '<p>';
-								itemCard += '<i class="fa fa-map-marker"></i>&nbsp; '+item.location.city+', '+item.location.country;
-								itemCard += '</p>';
-								itemCard += '</figcaption>';
-								itemCard += '</figure>';
-								itemCard += '<div class="content_details">';
-								itemCard += '<div class="trip">';
-								itemCard += '<i class="fa fa-trip"></i>';
-								itemCard += '<i class="fa fa-calif"></i>';
-								itemCard += '</div>';
-								itemCard += '<div class="content_price">';
-								itemCard += '<span>AR$ <span class="price">510</span></span>';
-								itemCard += '<p>';
-								itemCard += 'Por noche';
-								itemCard += '</p>';
-								itemCard += '</div>';
-								itemCard += '</div>';
-								itemCard += '</div><!-- item_hotel -->';
-								itemCard += '</li><!-- col-6 -->';
-					        				
-					        $('.listings-container').append(itemCard);
-					        bounds.extend(position);
-					        					        
-					        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-					            return function() {
-					            	
-								var infoWindowContent = '<div class="map_baloon">';
-									infoWindowContent += '<a href="javascript:;" class="btn_close_baloon">cerrar</a>';
-									infoWindowContent += '<div class="item_hotel" id="map-item-174245">';
-									infoWindowContent += '<figure>';
-									infoWindowContent += '<img src="'+itemImage+'" alt="'+item.name+'">';
-									infoWindowContent += '<div class="stars">';
-									for(s=0;s<Math.round(item.starsRating);s++) {
-									infoWindowContent += '<i class="fa fa-star"></i>';
-									}
-									infoWindowContent += '</div>';
-									infoWindowContent += '<figcaption>';
-									infoWindowContent += '<h2>'+item.name+'</h2>';
-									infoWindowContent += '<p><i class="fa fa-map-marker"></i>&nbsp; '+item.location.city+', '+item.location.country+'</p>';
-									infoWindowContent += '</figcaption>';
-									infoWindowContent += '</figure>';
-									infoWindowContent += '<div class="content_details">';
-									infoWindowContent += '<div class="trip"><i class="fa fa-trip"></i><i class="fa fa-calif"></i></div>';
-									infoWindowContent += '<div class="content_price">';
-									infoWindowContent += '<span>AR$ <span class="price">510</span></span>';
-									infoWindowContent += '<p>Por noche</p>';
-									infoWindowContent += '</div>';
-									infoWindowContent += '</div>';
-									infoWindowContent += '</div>';
-									infoWindowContent += '</div>';
-					            						           					            	
-					                infoWindow.setContent(infoWindowContent);
-					                infoWindow.open(map, marker);
-					            }
-					        })(marker, item.id));
+	highlight.css({'left':label.position().left + marginLeft, 'width':label.width() });
 
-					        google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
-					            return function() {					            	
-					            	$('#map-item-'+item.id).addClass('item_hotelhover');
-					            }
-					        })(marker, item.id));
+	/*// page change stuff
+	xPos = '-' + label.index() * 50;
+	$('#content').css( 'transform', 'translateX(' + xPos + '%)' );
 
-					        google.maps.event.addListener(marker, 'mouseout', (function(marker, i) {
-					            return function() {					            	
-					            	$('#map-item-'+item.id).removeClass('item_hotelhover');
-					            }
-					        })(marker, item.id));
+	setTimeout(function(){
+		$('#content').find('.' + page  + ' :input')[0].focus();
+	}, 100);*/
+}
+
+/*
+*	Google Maps Api.
+*/
+var map;
+
+function initialize() {
+	var myLatlng = new google.maps.LatLng(26.10876,-80.10676);
+	var mapOptions = {
+		zoom : 8,
+		center : myLatlng
+	}
+	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	
+    var infoWindow = new google.maps.InfoWindow(), marker, i;
+    var marker;
+    var bounds = new google.maps.LatLngBounds();
+    
+    $.ajax({
+        url: "markers.json",
+        dataType: "text",
+        success: function(data) {                        
+            var json = $.parseJSON(data);
+            $.each(json.data.abstractDTOs, function(i,item){
+            	var itemImage = 'images/img-item.png';
+            	
+            	$.each(item.images, function(ii,img){
+            		if(img.defaultimage) {
+            			itemImage = img.url;
+            		}
+            	});
+
+		        var position = new google.maps.LatLng(item.location.latitude, item.location.longitude);
+		        marker = new google.maps.Marker({
+		            position: position,
+		            map: map,
+		            title: item.name,
+		            icon: 'images/marker.png'
+		        });
+		        
+		        var itemCard = '<li class="col-6 map_item" data-item-id="'+item.id+'" data-item-lat="'+item.location.latitude+'" data-item-long="'+item.location.longitude+'">';
+					itemCard += '<div class="item_hotel" id="map-item-'+item.id+'">';
+					itemCard += '<figure>';
+					itemCard += '<img width="290" height="238" src="'+itemImage+'" alt="'+item.name+'">';
+					itemCard += '<div class="stars">';								
 					
-  						});
-  						
-  					    //map.fitBounds(bounds);
-					    //map.panToBounds(bounds);    
-  						
-                    }
-                });
-                							
-			}
+					for(s=0;s<Math.round(item.starsRating);s++) {
+						itemCard += '<i class="fa fa-star"></i>';
+					}								
+					
+					itemCard += '</div>';
+					itemCard += '<figcaption>';
+					itemCard += '<h2>'+item.name+'</h2>';
+					itemCard += '<p>';
+					itemCard += '<i class="fa fa-map-marker"></i>&nbsp; '+item.location.city+', '+item.location.country;
+					itemCard += '</p>';
+					itemCard += '</figcaption>';
+					itemCard += '</figure>';
+					itemCard += '<div class="content_details">';
+					itemCard += '<div class="trip">';
+					itemCard += '<i class="fa fa-trip"></i>';
+					itemCard += '<i class="fa fa-calif"></i>';
+					itemCard += '</div>';
+					itemCard += '<div class="content_price">';
+					itemCard += '<span>AR$ <span class="price">510</span></span>';
+					itemCard += '<p>';
+					itemCard += 'Por noche';
+					itemCard += '</p>';
+					itemCard += '</div>';
+					itemCard += '</div>';
+					itemCard += '</div><!-- item_hotel -->';
+					itemCard += '</li><!-- col-6 -->';
+		        				
+		        $('.listings-container').append(itemCard);
+		        bounds.extend(position);
+		        					        
+		        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+		            return function() {
+		            	
+					var infoWindowContent = '<div class="map_baloon">';
+						infoWindowContent += '<a href="javascript:;" class="btn_close_baloon">cerrar</a>';
+						infoWindowContent += '<div class="item_hotel" id="map-item-174245">';
+						infoWindowContent += '<figure>';
+						infoWindowContent += '<img src="'+itemImage+'" alt="'+item.name+'">';
+						infoWindowContent += '<div class="stars">';
+						for(s=0;s<Math.round(item.starsRating);s++) {
+						infoWindowContent += '<i class="fa fa-star"></i>';
+						}
+						infoWindowContent += '</div>';
+						infoWindowContent += '<figcaption>';
+						infoWindowContent += '<h2>'+item.name+'</h2>';
+						infoWindowContent += '<p><i class="fa fa-map-marker"></i>&nbsp; '+item.location.city+', '+item.location.country+'</p>';
+						infoWindowContent += '</figcaption>';
+						infoWindowContent += '</figure>';
+						infoWindowContent += '<div class="content_details">';
+						infoWindowContent += '<div class="trip"><i class="fa fa-trip"></i><i class="fa fa-calif"></i></div>';
+						infoWindowContent += '<div class="content_price">';
+						infoWindowContent += '<span>AR$ <span class="price">510</span></span>';
+						infoWindowContent += '<p>Por noche</p>';
+						infoWindowContent += '</div>';
+						infoWindowContent += '</div>';
+						infoWindowContent += '</div>';
+						infoWindowContent += '</div>';
+		            						           					            	
+		                infoWindow.setContent(infoWindowContent);
+		                infoWindow.open(map, marker);
+		            }
+		        })(marker, item.id));
 
-			google.maps.event.addDomListener(window, 'load', initialize);
+		        google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+		            return function() {					            	
+		            	$('#map-item-'+item.id).addClass('item_hotelhover');
+		            }
+		        })(marker, item.id));
+
+		        google.maps.event.addListener(marker, 'mouseout', (function(marker, i) {
+		            return function() {					            	
+		            	$('#map-item-'+item.id).removeClass('item_hotelhover');
+		            }
+		        })(marker, item.id));
+		
+				});
+				
+			    //map.fitBounds(bounds);
+		    //map.panToBounds(bounds);    
+				
+        }
+    });
+    							
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
