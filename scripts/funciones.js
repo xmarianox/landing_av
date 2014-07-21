@@ -112,6 +112,7 @@ $(document).ready(function () {
 
 			$('.listings-container').addClass(classname);
 			$('.content_mapa').width(classnamem+'%');
+			$('.lista_hoteles').width(100-classnamem+'%');
 	        initialize();
 	        
 	    }
