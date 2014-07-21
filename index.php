@@ -325,10 +325,7 @@
 
 				<div class="resultado" >
 
-					<div class="content_arrow">
-						<a style="cursor: pointer" id="arrow-l" class="arrow_resul left"><i class="fa fa-chevron-left"></i></a>
-						<a style="cursor: pointer" id="arrow-r" class="arrow_resul right"><i class="fa fa-chevron-right"></i></a>
-					</div>
+					<span class="content_arrow"></span>
 
 					<div class="content_mapa">
 						<div class="map-canvas" id="map-canvas">							
