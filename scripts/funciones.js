@@ -111,11 +111,10 @@ $(document).ready(function () {
         	console.log('lista: ' + classname + ' --- mapa: ' + classnamem);
 
 			$('.listings-container').addClass(classname);
-			$('.content_mapa').addClass(classnamem);
-				        	        	        
+			//$('.content_mapa').addClass(classnamem);
+			$('.content_mapa').width(pp+'%');
+			$('.lista_hoteles').   	        	        
 	        initialize();
-	        
-	        
 	        
 	    }
 	});
