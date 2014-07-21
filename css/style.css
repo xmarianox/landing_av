@@ -890,11 +890,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 /* listado 76%*/
 .listings-container.mid > .col-6 {
-	width: 33%
+	width: 50%
 }
 /* listado 100%*/
 .listings-container.big > .col-6 {
-	width: 25%
+	width: 33%
 }
 /* mapa 76%*/
 .listings-container.short > .col-6 {
