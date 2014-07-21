@@ -267,6 +267,8 @@ function initialize() {
             			itemImage = img.url;
             		}
             	});
+            	
+            	itemImage = 'http://media.expedia.com/hotels/1000000/10000/7500/7498/7498_103_b.jpg';
 
 				var itemPrice = 0;
             	$.each(item.priceInfo.rates, function(iii,p){
