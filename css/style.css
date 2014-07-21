@@ -792,8 +792,8 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .content_arrow {
 	position: absolute;
-	top: 220px;
-	left: 605px;
+	top: 190px;
+	left: 646px;
 	z-index: 600;
 }
 .arrow_resul {
@@ -917,6 +917,13 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     border-top: 3px solid #FFCC05;
     padding-top: 6px;
 }
+
+.item_hotelhover {
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
 .item_hotel figure {
     position: relative;
 }

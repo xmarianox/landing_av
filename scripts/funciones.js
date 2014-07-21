@@ -59,7 +59,57 @@ $(document).ready(function () {
 	    },
 	    stop: function(event, ui) {
 	        stop = ui.position.left;
-	        alert('has moved ' + ((start < stop) ? 'rigth':'left'))
+	        	        
+	        var w = $( window ).width();
+	        var m = ((start < stop) ? '+mapa':'+lista');
+	        
+	        var pp = Math.round((stop*100)/w);
+			var classname = '';
+			
+			if(m == '+lista') {
+				pp = 100-pp;
+			}
+			
+			console.log(m + ' - ' + pp + '%');
+	        
+			$('.listings-container').removeClass('short').removeClass('mid').removeClass('big');
+        	
+        	if(m == '+lista') {
+	        	if(pp >= 0 && pp <= 35)	 {	        		
+	        		classname = 'short';
+	        	}
+	
+	        	if(pp > 35 && pp <= 80) {
+	        		classname = 'mid';
+	        	}
+	
+	        	if(pp > 80) {
+	        		classname = 'big';
+        		}
+        	} else {
+        	
+	        	if(pp >= 0 && pp <= 35)	 {	        		
+	        		classname = 'big';
+	        	}
+	
+	        	if(pp > 35 && pp <= 80) {
+	        		classname = 'mid';
+	        	}
+	
+	        	if(pp > 80) {
+	        		classname = 'short';
+        		}
+        	
+        	}
+        	
+        	console.log(classname);
+
+			$('.listings-container').addClass(classname);
+	        	        	        
+	        initialize();
+	        
+	        
+	        
 	    }
 	});
 
@@ -213,6 +263,13 @@ function initialize() {
             		}
             	});
 
+				var itemPrice = 0;
+            	$.each(item.priceInfo.rates, function(iii,p){
+            		if(p.currencyCode == 'USD') {
+            			itemPrice = p.averageBaseRate;
+            		}
+            	});
+
 		        var position = new google.maps.LatLng(item.location.latitude, item.location.longitude);
 		        marker = new google.maps.Marker({
 		            position: position,
@@ -245,7 +302,7 @@ function initialize() {
 					itemCard += '<i class="fa fa-calif"></i>';
 					itemCard += '</div>';
 					itemCard += '<div class="content_price">';
-					itemCard += '<span>AR$ <span class="price">510</span></span>';
+					itemCard += '<span>AR$ <span class="price">'+itemPrice+'</span></span>';
 					itemCard += '<p>';
 					itemCard += 'Por noche';
 					itemCard += '</p>';
