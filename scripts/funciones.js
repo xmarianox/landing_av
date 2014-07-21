@@ -77,43 +77,41 @@ $(document).ready(function () {
         	if(m == '+lista') {
 	        	if(pp >= 0 && pp <= 35)	 {	        		
 	        		classname = 'short';
-	        		classnamem = 'big';
+	        		classnamem = '75';
 	        	}
 	
 	        	if(pp > 35 && pp <= 80) {
 	        		classname = 'mid';
-	        		classnamem = 'mid';
+	        		classnamem = '50';
 	        	}
 	
 	        	if(pp > 80) {
 	        		classname = 'big';
-	        		classnamem = 'short';
+	        		classnamem = '25';
         		}
         	} else {
         	
 	        	if(pp >= 0 && pp <= 35)	 {	        		
 	        		classname = 'big';
-	        		classnamem = 'short';
+	        		classnamem = '25';
 	        	}
 	
 	        	if(pp > 35 && pp <= 80) {
 	        		classname = 'mid';
-	        		classnamem = 'mid';
+	        		classnamem = '50';
 	        	}
 	
 	        	if(pp > 80) {
 	        		classname = 'short';
-	        		classnamem = 'big';
+	        		classnamem = '75';
         		}
         	
         	}
         	
-        	console.log('lista: ' + classname + ' --- mapa: ' + classnamem);
+        	console.log('lista: ' + classname + ' --- mapa: ' + classnamem + '%');
 
 			$('.listings-container').addClass(classname);
-			//$('.content_mapa').addClass(classnamem);
-			$('.content_mapa').width(pp+'%');
-			$('.lista_hoteles').   	        	        
+			$('.content_mapa').width(classnamem+'%');
 	        initialize();
 	        
 	    }
