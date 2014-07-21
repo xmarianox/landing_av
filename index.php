@@ -361,10 +361,12 @@
 								</form>
 							</div>
 
-							<ul class="listings-container">
+							<div id="loading" style="margin-left: 300px; margin-top: 300px"><img src="images/loading.gif" /></div>
+
+							<ul class="listings-container" style="display:none">
 							</ul><!-- .listings-container -->
 
-							<div class="content-pager-result">
+							<div class="content-pager-result" style="display: none">
 								<a href="javascript:;" class="btn btn-basic disable" title="Anterior" >Anterior</a>
 								
 								<ul id="pagination">

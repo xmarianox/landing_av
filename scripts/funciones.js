@@ -50,7 +50,7 @@ $(document).ready(function () {
 	  map.setZoom(16);
 	});
 	
-	var currentView='49-51';
+	var currentView='50-50';
 
 	$(".content_arrow").draggable({
 	    axis: "x",
@@ -78,38 +78,57 @@ $(document).ready(function () {
 	        	if(pp >= 0 && pp <= 35)	 {	        		
 	        		classname = 'short';
 	        		classnamem = '75';
+	        		currentView = '75-25';
 	        	}
 	
 	        	if(pp > 35 && pp <= 80) {
 	        		classname = 'mid';
 	        		classnamem = '50';
+	        		currentView = '50-50';
 	        	}
 	
-	        	if(pp > 80) {
+	        	if(pp > 80 && pp <= 95) {
 	        		classname = 'big';
 	        		classnamem = '25';
+	        		currentView = '25-75';
         		}
+
+	        	if(pp > 95) {
+	        		classname = 'big';
+	        		classnamem = '0';
+	        		currentView = '0-100';
+        		}
+
         	} else {
         	
 	        	if(pp >= 0 && pp <= 35)	 {	        		
 	        		classname = 'big';
 	        		classnamem = '25';
+	        		currentView = '75-25';
 	        	}
 	
 	        	if(pp > 35 && pp <= 80) {
 	        		classname = 'mid';
 	        		classnamem = '50';
+	        		currentView = '50-50';
 	        	}
 	
-	        	if(pp > 80) {
+	        	if(pp > 80 && pp <= 95) {
 	        		classname = 'short';
 	        		classnamem = '75';
+	        		currentView = '75-25';
+        		}
+
+	        	if(pp > 95) {
+	        		classname = 'short';
+	        		classnamem = '100';
+	        		currentView = '100-0';
         		}
         	
         	}
         	
         	console.log('lista: ' + classname + ' --- mapa: ' + classnamem + '%');
-
+			
 			$('.listings-container').addClass(classname);
 			$('.content_mapa').width(classnamem+'%');
 			$('.lista_hoteles').width(100-classnamem+'%');
@@ -118,108 +137,48 @@ $(document).ready(function () {
 	    }
 	});
 
-	/*$('.arrow_resul').click(function() {
+	$('.arrow_resul').click(function() {
 		
 		if($(this).hasClass('right')) {
-			
-			console.log('right ' + currentView);
-			
-			if(currentView=='49-51') {
-				$('.content_mapa').width('76%');
-				$('#arrow-r').css('left','77%')
-				$('#arrow-l').css('right','23%')
-				$('.lista_hoteles').width('24%');
-				currentView = '76-24';
-				console.log(currentView);
-				initialize();
-				return true;
+			console.log('+mapa');
+
+			if(currentView == '50-50') {
 			}
-			
-			if(currentView=='76-24') {
-				$('.content_mapa').width('100%');
-				$('#arrow-r').css('left','100%')
-				$('#arrow-l').css('right','0%')
-				$('.lista_hoteles').width('0%');
-				currentView = '100-0';
-				initialize();
-				console.log(currentView);
-				return true;
+	
+			if(currentView == '100-0') {
+			}
+	
+			if(currentView == '75-25') {
+			}
+	
+			if(currentView == '0-100') {
+			}
+	
+			if(currentView == '25-75') {
 			}
 
-			if(currentView=='24-76') {
-				$('.content_mapa').width('49%');
-				$('#arrow-r').css('left','49%')
-				$('#arrow-l').css('right','51%')
-				$('.lista_hoteles').width('51%');			
-				currentView = '49-51';
-				initialize();
-				console.log(currentView);
-				return true;
-			}
-
-			if(currentView=='100-0') {
-				$('.content_mapa').width('24%');
-				$('#arrow-r').css('left','24%')
-				$('#arrow-l').css('right','76%')
-				$('.lista_hoteles').width('76%');			
-				currentView = '24-76';
-				initialize();
-				console.log(currentView);
-				return true;
-			}
-			
 		} else {
-			
-			console.log('left ' + currentView);
+			console.log('+lista');
 
-			if(currentView=='49-51') {
-				$('.content_mapa').width('24%');
-				$('#arrow-r').css('left','25%')
-				$('#arrow-l').css('right','75%')
-				$('.lista_hoteles').width('76%');
-				currentView = '24-76';
-				initialize();
-				console.log(currentView);
-				return true;
+			if(currentView == '50-50') {
 			}
-			
-			if(currentView=='24-76') {
-				$('.content_mapa').width('0%');
-				$('#arrow-r').css('left','0%')
-				$('#arrow-l').css('right','100%')
-				$('.lista_hoteles').width('100%');
-				currentView = '100-0';
-				initialize();
-				console.log(currentView);
-				return true;
+	
+			if(currentView == '100-0') {
+			}
+	
+			if(currentView == '75-25') {
+			}
+	
+			if(currentView == '0-100') {
+			}
+	
+			if(currentView == '25-75') {
 			}
 
-			if(currentView=='76-24') {
-				$('.content_mapa').width('49%');
-				$('#arrow-r').css('left','49%')
-				$('#arrow-l').css('right','51%')				
-				$('.lista_hoteles').width('51%');
-				currentView = '49-51';
-				initialize();
-				console.log(currentView);
-				return true;
-			}
-
-			if(currentView=='100-0') {
-				$('.content_mapa').width('76%');
-				$('#arrow-r').css('left','76%')
-				$('#arrow-l').css('right','24%')				
-				$('.lista_hoteles').width('24%');
-				currentView = '76-24';
-				initialize();
-				console.log(currentView);
-				return true;
-			}
-
-			
 		}
+		
 
-	});*/
+	});
 	
 });
 
@@ -371,6 +330,9 @@ function initialize() {
 			    //map.fitBounds(bounds);
 		    //map.panToBounds(bounds);    
 				
+				
+			$('#loading').hide();	
+			$('.listings-container, .content-pager-result').show();
         }
     });
     							
