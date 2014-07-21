@@ -77,35 +77,42 @@ $(document).ready(function () {
         	if(m == '+lista') {
 	        	if(pp >= 0 && pp <= 35)	 {	        		
 	        		classname = 'short';
+	        		classnamem = 'big';
 	        	}
 	
 	        	if(pp > 35 && pp <= 80) {
 	        		classname = 'mid';
+	        		classnamem = 'mid';
 	        	}
 	
 	        	if(pp > 80) {
 	        		classname = 'big';
+	        		classnamem = 'short';
         		}
         	} else {
         	
 	        	if(pp >= 0 && pp <= 35)	 {	        		
 	        		classname = 'big';
+	        		classnamem = 'short';
 	        	}
 	
 	        	if(pp > 35 && pp <= 80) {
 	        		classname = 'mid';
+	        		classnamem = 'mid';
 	        	}
 	
 	        	if(pp > 80) {
 	        		classname = 'short';
+	        		classnamem = 'big';
         		}
         	
         	}
         	
-        	console.log(classname);
+        	console.log('lista: ' + classname + ' --- mapa: ' + classnamem);
 
 			$('.listings-container').addClass(classname);
-	        	        	        
+			$('.content_mapa').addClass(classnamem);
+				        	        	        
 	        initialize();
 	        
 	        
