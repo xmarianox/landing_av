@@ -791,11 +791,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     overflow: hidden;
 }
 .content_arrow {
-	/*
-	position: fixed;
-	top: 214px;
-	right: 624px;
-	*/
 	position: absolute;
 	top: 220px;
 	left: 605px;
@@ -825,8 +820,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 .content_mapa {
     width: 49%;
     border-right: 1px solid #bfbdbe;
-    /*overflow: hidden;*/
-    /*position: fixed;*/
     position: absolute;
     left: 0;
     bottom: 0;
@@ -895,20 +888,18 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     position: relative;
     min-height: 1px;
 }
-/** Clases a implementar cuando se ajustas las cajas.
-// listado 76%
-.listings-container > .col-6 {
+/* listado 76%*/
+.listings-container.mid > .col-6 {
 	width: 33%
 }
-// listado 100%
-.listings-container > .col-6 {
+/* listado 100%*/
+.listings-container.big > .col-6 {
 	width: 25%
 }
-// mapa 76%
-.listings-container > .col-6 {
+/* mapa 76%*/
+.listings-container.short > .col-6 {
 	width: 100%
 }
-*/
 .item_hotel {
     border-radius: 8px;
     background-color: #FFF;
