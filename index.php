@@ -371,7 +371,7 @@
 								</form>
 							</div>
 
-							<div id="loading" style="margin-left: 300px; margin-top: 300px"><img src="images/loading.gif" /></div>
+							<div id="loading"><img src="images/loading.gif" /></div>
 
 							<ul class="listings-container" style="display:none">
 							</ul><!-- .listings-container -->

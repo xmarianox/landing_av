@@ -976,6 +976,12 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     color: #666666;
 }
 /* = = = = = = = = = =
+*  Loader
+*  = = = = = = = = = */
+#loading {
+	margin: 50% 45%;
+}
+/* = = = = = = = = = =
 *  Paginado
 *  = = = = = = = = = */
 .content-pager-result {
