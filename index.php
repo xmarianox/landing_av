@@ -306,6 +306,15 @@
 							</div>
 
 							<div class="cols">
+								<h2>Estrellas</h2>
+								<input type="checkbox" name="estrellas" id="estrellas_mayor" class="css-checkbox" />
+								<label for="estrellas_mayor" class="css-label radGroup1">Mayor</label>
+
+								<input type="checkbox" name="estrellas" id="estrellas_menor" class="css-checkbox" />
+								<label for="estrellas_manor" class="css-label radGroup1">Menor</label>
+							</div>
+
+							<div class="cols">
 								<h2>Mas Populares</h2>
 								<input type="checkbox" name="mas_populares" id="mas_populares" class="css-checkbox" />
 								<label for="mas_populares" class="css-label radGroup1">Mayor a Menor</label>
