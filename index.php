@@ -137,131 +137,136 @@
 					</div><!-- .control -->
 
 					<div class="control opciones">
+						<div class="container">
 
-						<div class="cols">
-							<h2>Barrios <span>(254)</span></h2>
+							<div class="cols">
+								<h2>Barrios <span>(254)</span></h2>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
-							<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+								<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
-							<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+								<label for="checkboxG2" class="css-label radGroup1">Centro</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
-							<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+								<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
-							<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
+								<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG5" class="css-checkbox" />
-							<label for="checkboxG5" class="css-label radGroup1">Plaza Mayor</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG5" class="css-checkbox" />
+								<label for="checkboxG5" class="css-label radGroup1">Plaza Mayor</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG6" class="css-checkbox" />
-							<label for="checkboxG6" class="css-label radGroup1">La Latina</label>
-						</div><!-- cols - barrios -->
+								<input type="checkbox" name="checkboxG1" id="checkboxG6" class="css-checkbox" />
+								<label for="checkboxG6" class="css-label radGroup1">La Latina</label>
+							</div><!-- cols - barrios -->
 
-						<div class="cols">
-							<h2>Estrellas <span>(152)</span></h2>
+							<div class="cols">
+								<h2>Estrellas <span>(152)</span></h2>
 
-							<input type="checkbox" name="checkboxS1" id="checkboxS1" class="css-checkbox" checked="true"/>
-							<label for="checkboxS1" class="css-label radGroup1">Todas las estrellas</label>
+								<input type="checkbox" name="checkboxS1" id="checkboxS1" class="css-checkbox" checked="true"/>
+								<label for="checkboxS1" class="css-label radGroup1">Todas las estrellas</label>
 
-							<input type="checkbox" name="checkboxS2" id="checkboxS2" class="css-checkbox" />
-							<label for="checkboxS2" class="css-label radGroup1 fiveStar"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+								<input type="checkbox" name="checkboxS2" id="checkboxS2" class="css-checkbox" />
+								<label for="checkboxS2" class="css-label radGroup1 fiveStar"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
 
-							<input type="checkbox" name="checkboxS3" id="checkboxS3" class="css-checkbox" />
-							<label for="checkboxS3" class="css-label radGroup1 stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+								<input type="checkbox" name="checkboxS3" id="checkboxS3" class="css-checkbox" />
+								<label for="checkboxS3" class="css-label radGroup1 stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
 
-							<input type="checkbox" name="checkboxS4" id="checkboxS4" class="css-checkbox" />
-							<label for="checkboxS4" class="css-label radGroup1 stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+								<input type="checkbox" name="checkboxS4" id="checkboxS4" class="css-checkbox" />
+								<label for="checkboxS4" class="css-label radGroup1 stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
 
-							<input type="checkbox" name="checkboxS5" id="checkboxS5" class="css-checkbox" />
-							<label for="checkboxS5" class="css-label radGroup1 stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
+								<input type="checkbox" name="checkboxS5" id="checkboxS5" class="css-checkbox" />
+								<label for="checkboxS5" class="css-label radGroup1 stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i></label>
 
-							<input type="checkbox" name="checkboxS6" id="checkboxS6" class="css-checkbox" />
-							<label for="checkboxS6" class="css-label radGroup1 stars"><i class="fa fa-star"></i></label>
+								<input type="checkbox" name="checkboxS6" id="checkboxS6" class="css-checkbox" />
+								<label for="checkboxS6" class="css-label radGroup1 stars"><i class="fa fa-star"></i></label>
 
-							<input type="checkbox" name="checkboxS7" id="checkboxS7" class="css-checkbox" />
-							<label for="checkboxS7" class="css-label radGroup1">Sin categoría</label>
-						</div><!-- cols - estrellas -->
+								<input type="checkbox" name="checkboxS7" id="checkboxS7" class="css-checkbox" />
+								<label for="checkboxS7" class="css-label radGroup1">Sin categoría</label>
+							</div><!-- cols - estrellas -->
 
-						<div class="cols">
-							<h2>Rating TripAdvisor <span>(254)</span></h2>
+							<div class="cols">
+								<h2>Rating TripAdvisor <span>(254)</span></h2>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
-							<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+								<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
-							<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+								<label for="checkboxG2" class="css-label radGroup1">Centro</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
-							<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+								<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
-							<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
+								<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
 
-							<h2>Hoteles en promo <span>(254)</span></h2>
+							</div><!-- cols - trip -->
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
-							<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+							<div class="cols">
+								<h2>Hoteles en promo <span>(254)</span></h2>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
-							<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+								<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
-							<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+								<label for="checkboxG2" class="css-label radGroup1">Centro</label>
 
-						</div><!-- cols - trip -->
+								<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+								<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+							</div>
 
-						<div class="cols">
-							<h2>Servicios <span>(254)</span></h2>
+							<div class="cols">
+								<h2>Servicios <span>(254)</span></h2>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
-							<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+								<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
-							<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+								<label for="checkboxG2" class="css-label radGroup1">Centro</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
-							<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+								<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
-							<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
+								<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
-							<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+								<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
 
-							<a href="javascript:;" class="ver_mas" title="Ver mas"><i class="fa fa-arrow-circle-down"></i> Ver mas</a>
+								<a href="javascript:;" class="ver_mas" title="Ver mas"><i class="fa fa-arrow-circle-down"></i> Ver mas</a>
 
-						</div><!-- cols - trip -->
+							</div><!-- cols - trip -->
 
-						<div class="cols">
-							<h2>Clasificación <span>(152)</span></h2>
+							<div class="cols">
+								<h2>Clasificación <span>(152)</span></h2>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
-							<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" checked="true"/>
+								<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
-							<label for="checkboxG2" class="css-label radGroup1">Centro</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" />
+								<label for="checkboxG2" class="css-label radGroup1">Centro</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
-							<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" />
+								<label for="checkboxG3" class="css-label radGroup1">Lavpies</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
-							<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" />
+								<label for="checkboxG4" class="css-label radGroup1">Retiro</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
-							<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+								<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
-							<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+								<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
 
-							<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
-							<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
+								<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+								<label for="checkboxG1" class="css-label radGroup1">Todos los barrios</label>
 
-							<a href="javascript:;" class="ver_mas" title="Ver mas"><i class="fa fa-arrow-circle-down"></i> Ver mas</a>
+								<a href="javascript:;" class="ver_mas" title="Ver mas"><i class="fa fa-arrow-circle-down"></i> Ver mas</a>
 
-						</div><!-- cols - trip -->
+							</div><!-- cols - trip -->
+
+						</div>
 
 						<div class="message">
 							<p>
@@ -272,11 +277,8 @@
 					</div><!-- .control.opciones -->
 
 					<div class="control content_btn">
-						<a href="javascript:;" class="btn btn-primary" id="btn_aplicar_filtro">
-						<p>
-							Aplicar
-						</p> <!-- hay que mostrar este icono mientras se esta buscando
-						<i class="fa fa-spinner fa-spin"></i> --> </a>
+						<a href="javascript:;" class="btn btn-default" id="btn_restablecer_filtro">Restablecer los filtros</a>
+						<a href="javascript:;" class="btn btn-primary" id="btn_ocultar_filtro">Ocultar filtros</a>
 					</div>
 
 				</div><!-- .comp_filtros -->

@@ -683,14 +683,14 @@ label.css-label {
 .comp_filtros .opciones {
 	padding: 15px 0 0;
 }
+.comp_filtros .control .container {
+	width: 90%;
+	margin: 0 auto;
+}
 .comp_filtros .control .cols {
 	float: left;
-	padding-right: 15px;
-	min-width: 240px;
 	padding-bottom: 15px;
-}
-.comp_filtros .control .cols:first-child {
-	margin-left: 43px;
+	width: 16%;
 }
 .comp_filtros .control .cols h2 {
 	font-family: 'Open Sans', sans-serif;
@@ -728,18 +728,17 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .comp_filtros .content_btn {
 	min-height: 63px;
-    border-bottom: none;
-}
-#btn_aplicar_filtro,
-#btn_aplicar_orden {
-	width: 301px;
-	height: 31px;
+	border-bottom: none;
+	width: 398px;
 	margin: 0 auto;
-	display: block;
 }
-#btn_aplicar_filtro p,
-#btn_aplicar_orden p {
-	display: inline-block;
+#btn_ocultar_filtro,
+#btn_restablecer_filtro {
+	height: 31px;
+	width: 183px;
+}
+#btn_restablecer_filtro {
+	margin-right: 25px;
 }
 /* = = = = = = = = = = = = = = = = =
 *  FILTRO DE ORDEN
@@ -779,6 +778,15 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     font-weight: 700;
     font-size: 14px;
     margin: 15px 0 13px;
+}
+#btn_aplicar_orden {
+	width: 301px;
+	height: 31px;
+	margin: 0 auto;
+	display: block;
+}
+#btn_aplicar_orden p {
+	display: inline-block;
 }
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa
@@ -1170,8 +1178,12 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
         width: 100%;
     }
 }
-/* 890px */
+/* 800px */
 @media (max-width: 800px) {
+	.description_results {
+        display: none;
+        visibility: hidden;
+    }
     .comp_search #lugar {
         width: 240px;
     }
@@ -1181,13 +1193,12 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .combo select {
         width: 192px;
     }
+    .comp_orden .container .cols {
+		width: 25%;
+	}
 }
 /* IPAD */
 @media (max-width: 768px) {
-    .description_results {
-        display: none;
-        visibility: hidden;
-    }
     .comp_search {
         height: 110px;
         overflow: hidden;
@@ -1222,9 +1233,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .comp_filtros .control .cols:first-child {
         margin-left: 0; 
     }
-    .comp_orden .container .cols {
-		width: 25%;
-	}
 }
 @media (max-width: 600px) {
     .content_filtros .control,
