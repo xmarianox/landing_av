@@ -843,16 +843,97 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 	margin-bottom: 21px;
 }
 .content-share-search {
+	display: none;
 	background: #FFF;
-	padding: 20px;
+	padding: 20px 30px;
 	color: #000;
 	border-radius: 6px;
 	position: absolute;
 	z-index: 700;
-	right: 10px;
-	left: 10px;
+	right: 15px;
+	left: 20px;
 	top: 50px;
-	display: none;
+	-webkit-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         2px 2px 8px 0px rgba(50, 50, 50, 0.75);
+}
+.content-share-search:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid #FFF;
+	position: absolute;
+	top: -5px;
+	right: 19%;
+}
+.content-share-search h2 {
+	font-family: 'Stag-Light';
+	font-size: 22px;
+	margin-bottom: 23px;
+}
+#form_share fieldset {
+	width: 100%;
+	height: 36px;
+	background: #FFF;
+	border: 1px solid #989898;
+	border-radius: 4px;
+	margin-bottom: 9px;
+	overflow: hidden;
+}
+#form_share fieldset label {
+	font-family: Arial;
+	display: inline-block;
+	background: #EEEFF1;
+	vertical-align: middle;
+	width: 41px;
+	height: 36px;
+	padding: 10px 12px;
+	text-align: center;
+}
+#form_share input[type=email] {
+	display: inline-block;
+	height: 35px;
+	width: 70%;
+	border: 0;
+	vertical-align: middle;
+	padding-left: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #676767;
+}
+#form_share label[for=mensaje] {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #676767;
+	margin-bottom: 9px;
+	display: block;
+}
+#form_share textarea {
+	display: block;
+	width: 100%;
+	height: 135px;
+	background: #FFF;
+	border: 1px solid #989898;
+	border-radius: 4px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #676767;
+	padding: 15px;
+	margin-bottom: 11px;
+}
+#form_share .control {
+	float: right;
+}
+#form_share .btn {
+	width: 91px;
+}
+#btn_cancelar_share {
+	margin-right: 18px;
 }
 /* contenidos de los resultados */
 .outer-listings-container {

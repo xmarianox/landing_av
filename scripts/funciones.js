@@ -22,6 +22,10 @@ $(document).ready(function () {
 		$('.content-share-search').toggle('fade');
 	});
 
+	$('#btn_cancelar_share').click(function() {
+		$('.content-share-search').toggle('fade');
+	});
+
 	// Switch (fancy inputs)
 	$('menu.radio input').fancyInput();
 	$('menu.radio').on('change', 'input', changeForm).find('input:first').prop('checked',true).trigger('change');

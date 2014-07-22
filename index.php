@@ -353,7 +353,7 @@
 							<div class="content-share-search">
 								<h2>Compartir con tus amigos</h2>
 
-								<form action="">
+								<form action="" id="form_share">
 									
 									<fieldset>
 										<label for="email_friend">A</label>
@@ -367,6 +367,12 @@
 
 									<label for="mensaje">Mensaje</label>
 									<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+
+									<div class="control">
+										<a href="javascript:;" class="btn btn-default" id="btn_cancelar_share">Cancelar</a>
+										<a href="javascript:;" class="btn btn-primary" id="btn_enviar_share">Enviar</a>
+									</div>
 
 								</form>
 							</div>
