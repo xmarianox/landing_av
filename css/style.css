@@ -242,7 +242,6 @@ nav ul li a.active:after {
     background: #676767;
     color: #FFF;
 }
-
 /* fancy select */
 menu.radio {
 	font-family: 'Open Sans', sans-serif;
@@ -406,7 +405,7 @@ menu.radio span span {
     font-weight: 400;
     font-size: 14px;
     background: transparent;
-    width: 228px;
+    width: 222px;
     padding: 5px;
     line-height: 1;
     border: 0;
@@ -424,9 +423,9 @@ menu.radio span span {
     border: 1px solid #B2B2B4;
     display: inline-block;
     vertical-align: top;
-    background: #F3F3F3;
+    background: #F3F3F3 url(../images/bg-combo.png) right center no-repeat;
     border-radius: 4px;
-    padding: 0 5px;
+    padding: 0 21px 0 5px;
     margin-right: 10px;
     float: left;
 }
@@ -665,14 +664,19 @@ label.css-label {
 	user-select: none;
 }
 .comp_orden label.css-label {
-	background-image:url(../images/csscheckbox_2.png);
+	background-image:url(../images/csscheckbox_3.png);
 }
 /* orden */
 .comp_orden input[type=checkbox].css-checkbox + label.css-label, 
 .comp_orden input[type=checkbox].css-checkbox + label.css-label.clr {
     display: inline-block;
     margin-right: 15px;
-} 
+    height: 19px;
+}
+.comp_orden input[type=checkbox].css-checkbox:checked + label.css-label, 
+.comp_orden input[type=checkbox].css-checkbox + label.css-label.chk {
+	background-position: 0 -19px;
+}
 /* = = = = = = = = = = = = = = = = =
 *  FILTROS DE BUSQUEDA
 *  = = = = = = = = = = = = = = = = */
@@ -764,16 +768,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 }
 .comp_orden .container {
     margin: 0 auto;
-    max-width: 593px;
-    width: 100%;
+    width: 90%;
 }
 .comp_orden .container .cols {
     float: left;
-    width: 165px;
-    margin-right: 48px;
-}
-.comp_orden .container .cols:last-child {
-    margin-right: 0;
+    width: 25%;
 }
 .comp_orden h2 {
     font-family: 'Open Sans', sans-serif;
@@ -900,13 +899,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     border-top: 3px solid #FFCC05;
     padding-top: 6px;
 }
-
 .item_hotelhover {
     -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75);
 }
-
 .item_hotel figure {
     position: relative;
 }
@@ -923,7 +920,6 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
 .item_hotel figure img {
     width: 100%;
     height: auto;
-    max-height: 239px;
 }
 .item_hotel figure figcaption {
     font-family: 'Open Sans', sans-serif;
@@ -1248,12 +1244,8 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .combo select {
         width: 154px;
     }
-    .comp_orden .container {
-        max-width: 546px;
-    }
     .comp_orden .container .cols {
-        width: 165px;
-        margin-right: 24px;
+        width: 33%;
     }
     .comp_filtros .control .cols {
         min-width: 178px;

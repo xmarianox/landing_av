@@ -285,30 +285,30 @@
 					<div class="control">
 						<div class="container">
 							<div class="cols">
-								<h2>Precio</h2>
-								<input type="checkbox" name="checkboxO1" id="checkboxO1" class="css-checkbox" />
-								<label for="checkboxO1" class="css-label radGroup1">Mayor</label>
-
-								<input type="checkbox" name="checkboxO2" id="checkboxO2" class="css-checkbox" />
-								<label for="checkboxO2" class="css-label radGroup1">Menor</label>
+								<h2>Relevancia</h2>
+								<input type="checkbox" name="relevancia" id="relevancia" class="css-checkbox" />
+								<label for="relevancia" class="css-label radGroup1">Mayor a Menor</label>
 							</div>
 
 							<div class="cols">
-								<h2>Estrellas</h2>
-								<input type="checkbox" name="checkboxE1" id="checkboxE1" class="css-checkbox" />
-								<label for="checkboxE1" class="css-label radGroup1">Mayor</label>
+								<h2>Puntaje TripAdvisor</h2>
+								<input type="checkbox" name="puntaje_trip_advisor" id="puntaje_trip_advisor" class="css-checkbox" />
+								<label for="puntaje_trip_advisor" class="css-label radGroup1">Mayor a Menor</label>
+							</div>
 
-								<input type="checkbox" name="checkboxE2" id="checkboxE2" class="css-checkbox" />
-								<label for="checkboxE2" class="css-label radGroup1">Menor</label>
+							<div class="cols">
+								<h2>Precio</h2>
+								<input type="checkbox" name="precio" id="precio_mayor" class="css-checkbox" />
+								<label for="precio_mayor" class="css-label radGroup1">Mayor</label>
+
+								<input type="checkbox" name="precio" id="precio_menor" class="css-checkbox" />
+								<label for="precio_menor" class="css-label radGroup1">Menor</label>
 							</div>
 
 							<div class="cols">
 								<h2>Mas Populares</h2>
-								<input type="checkbox" name="checkboxM1" id="checkboxM1" class="css-checkbox" />
-								<label for="checkboxM1" class="css-label radGroup1">Mayor</label>
-
-								<input type="checkbox" name="checkboxM2" id="checkboxM2" class="css-checkbox" />
-								<label for="checkboxM2" class="css-label radGroup1">Menor</label>
+								<input type="checkbox" name="mas_populares" id="mas_populares" class="css-checkbox" />
+								<label for="mas_populares" class="css-label radGroup1">Mayor a Menor</label>
 							</div>
 						</div><!-- container -->
 					</div><!-- control -->
