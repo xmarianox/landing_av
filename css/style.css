@@ -1156,15 +1156,12 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     .comp_search #lugar {
        width: 363px;
     }
+    .comp_filtros .control .cols {
+    	width: 33%;
+    }
 }
 /* 890px */
 @media (max-width: 890px) {
-    .comp_filtros .control .cols {
-        min-width: 168px;
-    }
-    .comp_filtros .control .cols:first-child {
-        margin-left: 30px;
-    }
     .comp_search #lugar {
         width: 302px;
     }
@@ -1216,22 +1213,11 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
         color: #767576;
         font-size: 12px;
     }
-    #btn_aplicar_filtros {
-        width: 301px;
-        display: block;
-        margin-top: 18px;
-        float: left;
-        margin-left: 29%;
-        margin-right: 30%;
-    }
     .comp_filtros .opciones {
         padding: 15px 30px 0;
     }
     .comp_filtros .control .cols {
-        min-width: 235px;
-    }
-    .comp_filtros .control .cols:first-child {
-        margin-left: 0; 
+    	min-height: 240px;
     }
 }
 @media (max-width: 600px) {
