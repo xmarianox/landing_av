@@ -243,7 +243,7 @@ nav ul li a.active:after {
     color: #FFF;
 }
 /* fancy select */
-menu.radio {
+.exchange-swicht {
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -266,45 +266,29 @@ menu.radio {
 	position: relative;
 	margin-right: 10px;
 }
-menu.radio > div {
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	border-radius: 3px;
-	left: 0;
-	z-index: 1;
-	color: #FFF;
-	background: #1DA6DD;
-	-webkit-transition: 0.2s ease-out;
-	transition: 0.2s ease-out;
+.exchange-swicht-input {
+	display: none;
 }
-menu.radio label {
-	display: inline-block;
-	position: relative;
-	z-index: 2;
-	margin: 0;
-}
-menu.radio span {
+.exchange-swicht-label {
 	padding: 3px 14px 4px;
-	opacity: .5;
 	color: #222;
 	cursor: pointer;
 	display: inline-block;
 	-webkit-transition: 0.2s ease-out;
 	transition: 0.2s ease-out;
 }
-menu.radio :checked ~ span {
-	opacity: 1;
+.exchange-swicht-label span {
+	color: #666666;
+}
+.exchange-swicht-input:checked + .exchange-swicht-label {
+	border-radius: 3px;
 	color: #FFF;
+	background: #1DA6DD;
+	-webkit-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
 }
-menu.radio label:hover span{ 
-	opacity:1; 
-}
-menu.radio input {
-	display: none;
-}
-menu.radio span span {
-	padding: 0
+.exchange-swicht-input:checked + .exchange-swicht-label span {
+	color: #FFF;
 }
 /* = = = = = = = = = = = = = = = = =
 *  Resultado Mapa

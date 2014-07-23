@@ -17,7 +17,6 @@
 
 		<!-- <link rel="shortcut icon" href=""> -->
 		<!-- CSS -->
-		<link rel="stylesheet" href="css/fancyInput.css">
 		<link rel="stylesheet" href="css/style.css?v=<?=rand()?>">
 
 		<!-- JS -->
@@ -76,11 +75,13 @@
 
 						<div class="filtro">
 
-							<menu class='radio'>
-								<label><input type='radio' value='U$D' name='moneda' /><span>U$D (8.22)</span></label>
-								<label><input type='radio' value='AR$' name='moneda' /><span>AR$ Pesos</span></label>
-								<div></div>
-							</menu>
+							<div class="exchange-swicht">
+								<input type="radio" value="U$D" name="moneda" id="moneda_usd" class="exchange-swicht-input" />
+								<label for="moneda_usd" class="exchange-swicht-label">U$D <span>(8.22)</span></label>
+
+								<input type="radio" value="AR$" name="moneda" id="moneda_arg" class="exchange-swicht-input" checked/>
+								<label for="moneda_arg" class="exchange-swicht-label">AR$ Pesos</label>
+							</div>
 
 							<a href="javascript:;" class="btn btn-default" id="btn_orden"><i class="fa fa-bars"></i>&nbsp; Orden</a>
 							<a href="javascript:;" class="btn btn-default" id="btn_filtro"><i class="fa fa-sliders"></i>&nbsp; Filtros</a>
@@ -460,7 +461,6 @@
 		<script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
 		<script type="text/javascript" src="scripts/jquery-ui.js"></script>
 		<script type="text/javascript" src="scripts/jspatch.js"></script>
-		<script type="text/javascript" src="scripts/fancyInput.js"></script>
 		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBH94d27x-9O8K-2k4kFiYW8PQmmgVzvFk&sensor=false"></script>
 		<script type="text/javascript" src="scripts/funciones.js?v=<?=rand() ?>"></script>
 
