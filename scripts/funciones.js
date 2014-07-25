@@ -27,7 +27,7 @@ $(document).ready(function () {
 	});
 
 	// Switch (fancy inputs)
-	$('menu.radio input').fancyInput();
+///	$('menu.radio input').fancyInput();
 	$('menu.radio').on('change', 'input', changeForm).find('input:first').prop('checked',true).trigger('change');
 
 	// Datepicket
