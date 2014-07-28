@@ -339,7 +339,10 @@
 
 				<div class="resultado" >
 
-					<span class="content_arrow"></span>
+					<div class="content_arrow">
+						<span class="arrow left"></span>
+						<span class="arrow right"></span>
+					</div>
 
 					<div class="content_mapa">
 						<div class="map-canvas" id="map-canvas">							

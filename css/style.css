@@ -782,16 +782,29 @@ input[type=checkbox].css-checkbox + label.css-label.fiveStar {
     overflow: hidden;
 }
 .content_arrow {
-	background: url(../images/drag-arrow.png) 0 0 no-repeat;
 	width: 53px;
 	height: 34px;
 	position: absolute;
 	top: 200px;
-	left: 47%;
+	left: 47.2%;
 	z-index: 600;
-	cursor: pointer;
 	display: block;
-	text-indent: -9999px;
+	text-indent: 9999px;
+}
+.arrow {
+	background: url(../images/drag-arrow.png) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	height: 34px;
+	width: 26.5px;
+	cursor: pointer;
+	float: left;
+}
+.arrow.left {
+	background-position: 0 0;
+}
+.arrow.right {
+	background-position: -27px 0;
 }
 .content_mapa {
     width: 49%;
