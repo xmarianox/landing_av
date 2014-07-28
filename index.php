@@ -461,6 +461,7 @@
 		<script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
 		<script type="text/javascript" src="scripts/jquery-ui.js"></script>
 		<script type="text/javascript" src="scripts/jspatch.js"></script>
+		<script type="text/javascript" src="scripts/jquery.ui.touch-punch.js"></script>
 		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBH94d27x-9O8K-2k4kFiYW8PQmmgVzvFk&sensor=false"></script>
 		<script type="text/javascript" src="scripts/funciones.js?v=<?=rand() ?>"></script>
 
