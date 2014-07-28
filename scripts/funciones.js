@@ -55,17 +55,38 @@ $(document).ready(function () {
 	});
 	
 	var currentView='50-50';
-
+		
 	$(".content_arrow").draggable({
 	    axis: "x",
 	    start: function(event, ui) {
-	        start = ui.position.left;
+	        start = ui.position.left;	      
+			console.log('start drag');
+	    },
+	    drag: function(event, ui) {
+	    	console.log('dragging');
+	    	
+			var m = ((start < ui.position.left) ? '+mapa':'+lista');				    	
+    		var w = $( window ).width();
+    		var pp = Math.round((ui.position.left*100)/w)+1;
+    		
+    		if(m == '+mapa') {
+    			$('.content_mapa').width(pp+'%');
+    			$('.lista_hoteles').width(100-pp+'%');
+    		} else {
+    			$('.lista_hoteles').width(100-pp+'%');
+    			$('.content_mapa').width(pp+'%');
+    		}
+    			    	
 	    },
 	    stop: function(event, ui) {
+	    	console.log('stop drag');
+	    	
+	    	
 	        stop = ui.position.left;
-	        	        
+	        /*	        
 	        var w = $( window ).width();
 	        var m = ((start < stop) ? '+mapa':'+lista');
+	        
 	        
 	        var pp = Math.round((stop*100)/w);
 			var classname = '';
@@ -136,6 +157,7 @@ $(document).ready(function () {
 			$('.listings-container').addClass(classname);
 			$('.content_mapa').width(classnamem+'%');
 			$('.lista_hoteles').width(100-classnamem+'%');
+			*/
 	        initialize();
 	        
 	    }
@@ -209,7 +231,8 @@ function initialize() {
 	var myLatlng = new google.maps.LatLng(26.10876,-80.10676);
 	var mapOptions = {
 		zoom : 8,
-		center : myLatlng
+		center : myLatlng,
+		mapTypeControl: false
 	}
 	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 	
