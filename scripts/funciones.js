@@ -254,6 +254,7 @@ function changeForm(e) {
 var map;
 
 function initialize() {
+	
 	var myLatlng = new google.maps.LatLng(26.10876,-80.10676);
 	var mapOptions = {
 		zoom : 8,
